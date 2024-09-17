@@ -1,5 +1,6 @@
 <script setup>
 	const config = useRuntimeConfig().public;
+	const { navs } = useAppSettings();
 </script>
 
 <template>
@@ -23,9 +24,12 @@
 								</a>
 							</div>
 							<p class="mb-5">
-								Build faster websites with Block multipurpose
-								bootstrap 5 template. Duis imper diet mollis
-								leo, quis ultrices erat ultrices simple dummy .
+								Wal Working Technologies Limited is a Fire
+								Protection Company that provides Sales,
+								Installation, maintenance, Training And
+								Consultancy of all kinds of fire safety
+								equipment and personal protective equipments
+								(PPE) in Nigeria.
 							</p>
 
 							<form class="needs-validation" novalidate>
@@ -69,81 +73,10 @@
 					>
 						<div class="row" id="ft-links">
 							<div class="col-lg-4 col-12">
-								<div class="position-relative">
-									<div
-										class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0"
-									>
-										<h5>Landings</h5>
-										<a
-											class="d-block d-lg-none stretched-link text-inherit"
-											data-bs-toggle="collapse"
-											href="#collapseLanding"
-											role="button"
-											aria-expanded="false"
-											aria-controls="collapseLanding"
-										>
-											<i class="bi bi-chevron-down"></i>
-										</a>
-									</div>
-									<div
-										class="collapse d-lg-block"
-										id="collapseLanding"
-										data-bs-parent="#ft-links"
-									>
-										<ul
-											class="list-unstyled mb-0 py-3 py-lg-0"
-										>
-											<li class="mb-2">
-												<a
-													href="index-2.html"
-													class="text-decoration-none text-reset"
-													>Saas</a
-												>
-											</li>
-											<li class="mb-2">
-												<a
-													href="#!"
-													class="text-decoration-none text-reset"
-													>Software Company</a
-												>
-											</li>
-											<li class="mb-2">
-												<a
-													href="landing-finance.html"
-													class="text-decoration-none text-reset"
-													>Finance</a
-												>
-											</li>
-											<li class="mb-2">
-												<a
-													href="landing-jamstack-agancy.html"
-													class="text-decoration-none text-reset"
-													>Digital Agency</a
-												>
-											</li>
-											<li class="mb-2">
-												<a
-													href="landing-conference.html"
-													class="text-decoration-none text-reset"
-													>Conference</a
-												>
-											</li>
-											<li class="mb-2">
-												<a
-													href="#!"
-													class="text-decoration-none text-reset"
-													>App Template</a
-												>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-12">
 								<div
 									class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0 position-relative"
 								>
-									<h5>Accounts</h5>
+									<h5>Quick Links</h5>
 									<a
 										class="d-block d-lg-none stretched-link text-inherit"
 										data-bs-toggle="collapse"
@@ -161,107 +94,13 @@
 									data-bs-parent="#ft-links"
 								>
 									<ul class="list-unstyled mb-0 py-3 py-lg-0">
-										<li class="mb-2">
-											<a
-												href="signup.html"
+										<li v-for="nav in navs" class="mb-2">
+											<NuxtLink
 												class="text-decoration-none text-reset"
-												>Register</a
+												:to="nav.path"
 											>
-										</li>
-										<li class="mb-2">
-											<a
-												href="signin.html"
-												class="text-decoration-none text-reset"
-												>Login</a
-											>
-										</li>
-										<li class="mb-2">
-											<a
-												href="forget-password.html"
-												class="text-decoration-none text-reset"
-												>Forgot Password</a
-											>
-										</li>
-										<li class="mb-2">
-											<a
-												href="reset-password.html"
-												class="text-decoration-none text-reset"
-												>Reset Password</a
-											>
-										</li>
-										<li class="mb-2">
-											<a
-												href="#!"
-												class="text-decoration-none text-reset"
-												>Profile</a
-											>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-4 col-12">
-								<div
-									class="mb-3 pb-2 d-flex justify-content-between border-bottom border-bottom-lg-0 position-relative"
-								>
-									<h5>Resources</h5>
-									<a
-										class="d-block d-lg-none stretched-link text-inherit"
-										data-bs-toggle="collapse"
-										href="#collapseResources"
-										role="button"
-										aria-expanded="false"
-										aria-controls="collapseResources"
-									>
-										<i class="bi bi-chevron-down"></i>
-									</a>
-								</div>
-								<div
-									class="collapse d-lg-block"
-									id="collapseResources"
-									data-bs-parent="#ft-links"
-								>
-									<ul class="list-unstyled mb-0 py-3 py-lg-0">
-										<li class="mb-2">
-											<a
-												href="docs/index.html"
-												class="text-decoration-none text-reset"
-												>Docs</a
-											>
-										</li>
-										<li class="mb-2">
-											<a
-												href="#!"
-												class="text-decoration-none text-reset"
-												>Support</a
-											>
-										</li>
-										<li class="mb-2">
-											<a
-												href="changelog.html"
-												class="text-decoration-none text-reset"
-												>Changelog</a
-											>
-										</li>
-										<li class="mb-2">
-											<a
-												href="#!"
-												class="text-decoration-none text-reset"
-												>Help Center</a
-											>
-										</li>
-										<li class="mb-2">
-											<a
-												href="#!"
-												class="text-decoration-none text-reset"
-												>Community</a
-											>
-										</li>
-										<li class="mb-2">
-											<a
-												href="#!"
-												class="text-decoration-none text-reset"
-												>Webinars</a
-											>
+												{{ nav.name }}
+											</NuxtLink>
 										</li>
 									</ul>
 								</div>
@@ -277,12 +116,18 @@
 							Copyright © 2024
 
 							<span class="text-primary"
-								><a href="#">Block Bootstrap 5 Theme</a></span
+								><a href="#"
+									>WalWorking Technologies Inc.</a
+								></span
 							>
-							| Designed by
-							<span class="text-primary"
-								><a href="#">CodesCandy</a></span
-							>
+							| Developed by
+							<span class="text-primary">
+								<a
+									target="_blank"
+									href="https://jjenus.github.io"
+									>jjenus</a
+								>
+							</span>
 						</div>
 					</div>
 					<div class="col-md-3">
