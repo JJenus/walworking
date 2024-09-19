@@ -799,7 +799,7 @@
 											class="d-flex align-items-center mb-3 mb-md-0 small"
 										>
 											<div
-												class="d-flex align-items-center"
+												class="d-flexi d-none align-items-center"
 											>
 												<img
 													src="/assets//images/avatar/avatar-7.jpg"
