@@ -91,7 +91,7 @@ export default defineNuxtConfig({
 					defer: true,
 				},
 				{
-					src: "/assets/libs/jarallax/dist/jarallax.min.js",
+					src: "https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.2.1/jarallax.min.js",
 					defer: true,
 				}, // Jarallax first
 				{ src: "/assets/js/vendors/jarallax.js", defer: true }, // Related to Jarallax
