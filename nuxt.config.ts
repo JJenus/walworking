@@ -36,45 +36,46 @@ export default defineNuxtConfig({
 		head: {
 			meta: [
 				{
-					name: "viewport",
-					content: "width=device-width, initial-scale=1",
+				  name: "viewport",
+				  content: "width=device-width, initial-scale=1",
 				},
 				{
-					name: "twitter:card",
-					content:
-						"Top international financial services provided to be accessible to all",
+				  name: "twitter:card",
+				  content:
+					"Expert fire protection, construction, and consulting services tailored to your needs.",
 				},
 				{
-					name: "twitter:title",
-					content: "19Fx",
+				  name: "twitter:title",
+				  content: "WalWorking Technologies",
 				},
 				{
-					name: "twitter:description",
-					content:
-						"Top international financial services provided to be accessible to all",
+				  name: "twitter:description",
+				  content:
+					"Providing cutting-edge fire protection, construction, and consulting services to ensure safety and efficiency.",
 				},
 				{
-					name: "twitter:image",
-					content: "/assets/images/logo/logo-w.png",
+				  name: "twitter:image",
+				  content: "https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
 				},
 				{
-					property: "og:title",
-					content: "19Fx",
+				  property: "og:title",
+				  content: "WalWorking Technologies",
 				},
 				{
-					property: "og:description",
-					content:
-						"Top international financial services provided to be accessible to all",
+				  property: "og:description",
+				  content:
+					"Leading provider of fire safety, construction, and consulting solutions for businesses and individuals.",
 				},
 				{
-					property: "og:image",
-					content: "/assets/images/logo/logo-w.png",
+				  property: "og:image",
+				  content: "https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
 				},
 				{
-					property: "og:url",
-					content: "",
+				  property: "og:url",
+				  content: "https://walworkingtechnologies.vercel.app/",
 				},
-			],
+			  ],
+			  
 			script: [
 				{ src: "/assets/js/vendors/color-modes.js", defer: true },
 				{
@@ -94,6 +95,9 @@ export default defineNuxtConfig({
 					src: "https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.2.1/jarallax.min.js",
 					defer: true,
 				}, // Jarallax first
+				{
+					src: "https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js",
+				},
 				{ src: "/assets/js/vendors/jarallax.js", defer: true }, // Related to Jarallax
 				{ src: "/assets/js/vendors/parallax.js", defer: true }, // Parallax after Jarallax
 				{ src: "/assets/js/vendors/scrollcue.js", defer: true }, // Utility scripts after core
