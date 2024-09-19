@@ -82,7 +82,7 @@ export default defineNuxtConfig({
 				{ src: "/assets/js/vendors/color-modes.js", defer: true },
 				{
 					src: "/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js",
-					defer: true,
+					// defer: true,
 				},
 				{ src: "/assets/libs/scrollcue/scrollCue.min.js", defer: true },
 				{
@@ -91,7 +91,7 @@ export default defineNuxtConfig({
 				},
 				{
 					src: "/assets/libs/simplebar/dist/simplebar.min.js",
-					defer: true,
+					// defer: true,
 				},
 				{
 					src: "https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.2.1/jarallax.min.js",
@@ -99,6 +99,7 @@ export default defineNuxtConfig({
 				}, // Jarallax first
 				{
 					src: "https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js",
+					defer: true,
 				},
 				{ src: "/assets/js/vendors/jarallax.js", defer: true }, // Related to Jarallax
 				{ src: "/assets/js/vendors/parallax.js", defer: true }, // Parallax after Jarallax
