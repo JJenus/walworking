@@ -8,7 +8,9 @@
 					<div class="col-lg-6 offset-lg-3 col-md-12 col-12">
 						<div class="text-center">
 							<h1 class="mb-1 mb-lg-3">Get Started Today</h1>
-							<p class="mb-0">Pick Your Perfect Plan</p>
+							<p class="mb-0">
+								Authorized To Fully Operate In Nigeria
+							</p>
 						</div>
 					</div>
 				</div>
@@ -18,675 +20,20 @@
 		<!--Pricing start-->
 		<section class="pt-4 mt-lg-n8">
 			<div class="container price-wrapper">
-				<div class="row">
-					<div class="col-12 z-1">
-						<div class="mb-5">
-							<div class="price-switcher-wrapper switcher">
-								<p class="mb-0 pe-3">Monthly</p>
-								<div class="price-switchers">
-									<div
-										class="price-switcher price-switcher-active"
-									></div>
-									<div class="price-switcher"></div>
-									<div
-										class="switcher-button bg-primary"
-									></div>
-								</div>
-								<p class="mb-0 ps-3">Yearly</p>
+				<div
+					class="row flex-nowrap pb-4 me-5 me-lg-0 justify-content-center"
+				>
+					<div class="col-md-8 col-12">
+						<!--card-->
+						<div class="card bg-dark border-0">
+							<div class="card-body text-white">
+								<NuxtImg
+									class="w-100"
+									src="/assets/images/wal/certificate-of-incorporation.png"
+								/>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="table-responsive-xl">
-					<div class="row flex-nowrap pb-4 me-5 me-lg-0">
-						<div class="col-xl-4 col-lg-4 col-md-6 col-12">
-							<!--card-->
-							<div class="card bg-dark border-0">
-								<div class="card-body text-white">
-									<span
-										class="badge text-bg-warning text-uppercase mb-6 d-block py-2"
-										>free</span
-									>
-
-									<h1 class="text-white mb-4 h2">
-										30 Days Trial
-									</h1>
-									<div class="mb-6">
-										<h2 class="h3 text-white">Free</h2>
-										<p>
-											For new web developers ready to
-											create their first site.
-										</p>
-										<p class="mb-0 small">
-											* No credit card required.
-										</p>
-									</div>
-
-									<ul class="list-unstyled mb-0">
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-body"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>Browse Website with ads</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-body"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>Build static sites</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-body"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">1 space</span>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-body"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>10 MB storage</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-body"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>75 MB data / month</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-body"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>500 requests / month</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-body"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">Subdomain</span>
-										</li>
-										<li>
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-body"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>SSL certificate</span
-											>
-										</li>
-									</ul>
-									<div class="d-grid mt-6">
-										<a href="#" class="btn btn-primary"
-											>Get started now free trial</a
-										>
-									</div>
-								</div>
-							</div>
-							<!--card-->
-						</div>
-						<div class="col-xl-4 col-lg-4 col-md-6 col-12">
-							<!--card-->
-							<div class="card pricing">
-								<div class="card-body">
-									<h2 class="mb-4 d-flex align-items-center">
-										<div class="price-text">
-											<div class="price price-show">
-												<span>$</span>
-												<span>5.99</span>
-												<span
-													class="price-duration fs-6 text-body mt-auto mb-2"
-													>/month</span
-												>
-											</div>
-											<div
-												class="price price-hide price-hidden"
-											>
-												<span>$</span>
-												<span>19.99</span>
-												<span
-													class="price-duration fs-6 text-body mt-auto mb-2"
-													>/year</span
-												>
-											</div>
-										</div>
-									</h2>
-									<div class="mb-6">
-										<h3>Pro</h3>
-										<p class="mb-0">
-											For those running multiple spaces
-											with more traffic.
-										</p>
-									</div>
-
-									<ul class="list-unstyled mb-0">
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>Browse Website with ads</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>Build static sites</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">
-												<span class="fw-bold text-dark"
-													>10</span
-												>
-												space
-											</span>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">
-												<span class="text-dark fw-bold"
-													>3 GB</span
-												>
-												storage
-											</span>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">
-												<span class="text-dark fw-bold"
-													>15 GB</span
-												>
-												data / month
-											</span>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">
-												<span class="fw-bold text-dark"
-													>200 000</span
-												>
-												requests / month
-											</span>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">Subdomain</span>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>SSL certificate</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>Access to HTML video</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>Priority support</span
-											>
-										</li>
-
-										<li>
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">Analytics</span>
-										</li>
-									</ul>
-									<div class="d-grid mt-6">
-										<a href="#" class="btn btn-primary"
-											>$5.99 /month</a
-										>
-									</div>
-								</div>
-							</div>
-							<!--card-->
-						</div>
-						<div class="col-xl-4 col-lg-4 col-md-6 col-12">
-							<!--card-->
-							<div class="card pricing">
-								<div class="card-body">
-									<h2 class="mb-4 d-flex align-items-center">
-										<div class="price-text">
-											<div class="price price-show">
-												<span>$</span>
-												<span>15.99</span>
-												<span
-													class="price-duration fs-6 text-body mt-auto mb-2"
-													>/month</span
-												>
-											</div>
-											<div
-												class="price price-hide price-hidden"
-											>
-												<span>$</span>
-												<span>39.99</span>
-												<span
-													class="price-duration fs-6 text-body mt-auto mb-2"
-													>/year</span
-												>
-											</div>
-										</div>
-									</h2>
-									<div class="mb-6">
-										<h3>Premium</h3>
-										<p class="mb-0">
-											Build more sites and grow your
-											online presence.
-										</p>
-									</div>
-
-									<ul class="list-unstyled mb-0">
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>Browse Website with ads</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>Build static sites</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">
-												<span class="text-dark fw-bold"
-													>20</span
-												>
-												spaces
-											</span>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">
-												<span class="text-dark fw-bold"
-													>10 GB</span
-												>
-												storage
-											</span>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">
-												<span class="text-dark fw-bold"
-													>200 GB</span
-												>
-												data / month
-											</span>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">
-												<span class="fw-bold text-dark"
-													>500 000</span
-												>
-												requests / month
-											</span>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">Subdomain</span>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>SSL certificate</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>Access to HTML video</span
-											>
-										</li>
-										<li class="mb-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3"
-												>Priority support</span
-											>
-										</li>
-
-										<li>
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="14"
-												height="14"
-												fill="currentColor"
-												class="bi bi-check-circle-fill text-success"
-												viewBox="0 0 16 16"
-											>
-												<path
-													d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-												/>
-											</svg>
-											<span class="ms-3">Analytics</span>
-										</li>
-									</ul>
-									<div class="d-grid mt-6">
-										<a href="#" class="btn btn-primary"
-											>$15.99 /month</a
-										>
-									</div>
-								</div>
-							</div>
-							<!--card-->
-						</div>
+						<!--card-->
 					</div>
 				</div>
 			</div>
@@ -698,79 +45,13 @@
 				<div class="row">
 					<div class="col-lg-6 offset-lg-3 col-md-12 col-12">
 						<div class="text-center mb-7">
-							<h2>Trusted by 30,000+ businesses.</h2>
+							<h2>Trusted by all governing bodies.</h2>
 							<p class="mb-0">
-								Thousands of startups and organizations use
-								Block to improve the productivity of their sales
-								team and create more opportunities.
+								Hundreds of startups and organizations trust
+								WalWorking Technologies to enhance safety and
+								efficiency, ensuring secure operations while
+								unlocking new opportunities for growth.
 							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-10 offset-lg-1 col-12">
-						<div
-							class="swiper-container swiper"
-							id="swiper-1"
-							data-pagination-type=""
-							data-speed="400"
-							data-space-between="100"
-							data-pagination="true"
-							data-navigation="false"
-							data-autoplay="true"
-							data-autoplay-delay="3000"
-							data-breakpoints='{"480": {"slidesPerView": 2}, "768": {"slidesPerView": 3}, "1024": {"slidesPerView": 5}}'
-						>
-							<div class="swiper-wrapper pb-6">
-								<div class="swiper-slide">
-									<figure class="text-center">
-										<img
-											src="/assets/images/client-logo/clients-logo-1.svg"
-											alt="logo"
-										/>
-									</figure>
-								</div>
-								<div class="swiper-slide">
-									<figure class="text-center">
-										<img
-											src="/assets/images/client-logo/clients-logo-2.svg"
-											alt="logo"
-										/>
-									</figure>
-								</div>
-								<div class="swiper-slide">
-									<figure class="text-center">
-										<img
-											src="/assets/images/client-logo/clients-logo-3.svg"
-											alt="logo"
-										/>
-									</figure>
-								</div>
-								<div class="swiper-slide">
-									<figure class="text-center">
-										<img
-											src="/assets/images/client-logo/clients-logo-4.svg"
-											alt="logo"
-										/>
-									</figure>
-								</div>
-								<div class="swiper-slide">
-									<figure class="text-center">
-										<img
-											src="/assets/images/client-logo/clients-logo-5.svg"
-											alt="logo"
-										/>
-									</figure>
-								</div>
-								<!-- Add more slides as needed -->
-							</div>
-							<!-- Add Pagination -->
-							<div class="swiper-pagination"></div>
-							<!-- Add Navigation -->
-							<div class="swiper-navigation">
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -788,9 +69,9 @@
 								Can’t find any answer for your question?
 								<br />
 								Ask our
-								<a href="#" class="text-primary"
-									>customer support</a
-								>
+								<NuxtLink to="/contact-us" class="text-primary">
+									customer support
+								</NuxtLink>
 							</p>
 						</div>
 					</div>
@@ -808,7 +89,8 @@
 										aria-expanded="false"
 										aria-controls="collapseOne"
 									>
-										Can I trial block before paying?
+										What fire protection services do you
+										offer?
 										<span class="chevron-arrow"
 											><i class="bi bi-chevron-down"></i
 										></span>
@@ -820,10 +102,10 @@
 									data-bs-parent="#accordionExample"
 								>
 									<div class="mt-3">
-										Lorem ipsum dolor sit amet, consectetur
-										adipisicing elit. Quae harum adipisci
-										possimus et. Iusto pariatur iste nam
-										incidunt ratione modi.
+										We offer fire alarm system installation,
+										extinguisher maintenance, fire safety
+										audits, evacuation planning, and fire
+										suppression system setup.
 									</div>
 								</div>
 							</div>
@@ -838,7 +120,8 @@
 										aria-expanded="true"
 										aria-controls="collapseTwo"
 									>
-										How are additional plan billed?
+										Do you provide construction services for
+										residential and commercial projects?
 										<span class="chevron-arrow"
 											><i class="bi bi-chevron-down"></i
 										></span>
@@ -850,12 +133,11 @@
 									data-bs-parent="#accordionExample"
 								>
 									<div class="mt-3">
-										Sed urna felis, dapibus quis leo nec,
-										luctus auctor augue. Nam gravida
-										placerat sem vitae rutrum. Integer
-										accumsan, enim et facilisis eleifend,
-										ante ligula ornare nulla, sed pharetra
-										tortor diam eget magna.
+										Yes, we handle both residential and
+										commercial projects, offering services
+										like building construction, electrical
+										installations, HVAC, and plumbing
+										systems.
 									</div>
 								</div>
 							</div>
@@ -869,7 +151,8 @@
 										aria-expanded="false"
 										aria-controls="collapseThree"
 									>
-										When should I change my plan?
+										How do your consulting services help
+										businesses?
 										<span class="chevron-arrow"
 											><i class="bi bi-chevron-down"></i
 										></span>
@@ -881,11 +164,11 @@
 									data-bs-parent="#accordionExample"
 								>
 									<div class="mt-3">
-										Lorem ipsum dolor sit, amet consectetur
-										adipisicing elit. Inventore tenetur cum
-										doloremque iusto molestiae. Minus beatae
-										quam cumque modi quidem asperiores
-										aliquam pariatur in iste.
+										Our consulting services provide expert
+										advice on fire safety compliance,
+										construction management, and risk
+										mitigation, helping businesses stay
+										compliant and efficient.
 									</div>
 								</div>
 							</div>
@@ -899,7 +182,9 @@
 										aria-expanded="false"
 										aria-controls="collapseFour"
 									>
-										What payment methods do you offer?
+										Are your fire protection systems
+										compliant with Nigerian safety
+										regulations?
 										<span class="chevron-arrow"
 											><i class="bi bi-chevron-down"></i
 										></span>
@@ -911,11 +196,10 @@
 									data-bs-parent="#accordionExample"
 								>
 									<div class="mt-3">
-										Lorem ipsum dolor sit, amet consectetur
-										adipisicing elit. Inventore tenetur cum
-										doloremque iusto molestiae. Minus beatae
-										quam cumque modi quidem asperiores
-										aliquam pariatur in iste.
+										Yes, all our fire protection systems
+										meet Nigerian fire codes and safety
+										regulations, ensuring the highest
+										standard of protection.
 									</div>
 								</div>
 							</div>
@@ -929,7 +213,8 @@
 										aria-expanded="false"
 										aria-controls="collapseFive"
 									>
-										What is your refund policy?
+										Can you customize your services based on
+										my project needs?
 										<span class="chevron-arrow"
 											><i class="bi bi-chevron-down"></i
 										></span>
@@ -941,11 +226,10 @@
 									data-bs-parent="#accordionExample"
 								>
 									<div class="mt-3">
-										Lorem ipsum dolor sit, amet consectetur
-										adipisicing elit. Inventore tenetur cum
-										doloremque iusto molestiae. Minus beatae
-										quam cumque modi quidem asperiores
-										aliquam pariatur in iste.
+										Absolutely! We tailor our services to
+										meet the specific requirements of each
+										project, whether for fire safety,
+										construction, or consulting.
 									</div>
 								</div>
 							</div>
@@ -959,8 +243,8 @@
 										aria-expanded="false"
 										aria-controls="collapseSix"
 									>
-										How are paid plans billed when moving
-										other plan?
+										How often should fire safety audits be
+										conducted?
 										<span class="chevron-arrow"
 											><i class="bi bi-chevron-down"></i
 										></span>
@@ -972,11 +256,11 @@
 									data-bs-parent="#accordionExample"
 								>
 									<div class="mt-3">
-										Lorem ipsum dolor sit, amet consectetur
-										adipisicing elit. Inventore tenetur cum
-										doloremque iusto molestiae. Minus beatae
-										quam cumque modi quidem asperiores
-										aliquam pariatur in iste.
+										We recommend conducting fire safety
+										audits annually to ensure that all
+										systems are functioning correctly and
+										that the property remains compliant with
+										safety standards.
 									</div>
 								</div>
 							</div>

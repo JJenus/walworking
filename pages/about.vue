@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="">
 		<div class="pattern-square"></div>
 		<!--Who we are start-->
 		<section class="mb-7 py-xl-9 py-5">
@@ -9,14 +9,17 @@
 						<div class="me-xl-8">
 							<h1 class="mb-3">Who we are</h1>
 							<p class="lead mb-4">
-								We help organizations achieve their most
-								ambitious goals and move with greater agility.
+								Wal Working Technologies Limited is a Fire
+								Protection Company that provides Sales,
+								Installation, maintenance, Training And
+								Consultancy of all kinds of fire safety
+								equipment and personal protective
+								equipments(PPE)inNigeria.
 							</p>
 							<p class="mb-6 me-xl-6">
-								With our next-generation app platform, teams
-								easily design and deploy flexible and engaging
-								apps that power critical workflows and make
-								valuable data actionable across the enterprise.
+								We service clients such as oil and gas company,
+								manufacturingindustry, power sectors, ICT
+								operators, individuals among others...
 							</p>
 							<div class="row g-lg-3">
 								<div class="col-md-6">
@@ -36,10 +39,16 @@
 													/>
 												</svg>
 											</span>
-											<span class="ms-2"
-												>Aenean eu leo quam ornare
-												curabitur blandit tempus.</span
-											>
+											<span class="ms-2">
+												Wal Working Technologies Ltd
+												have gained an outstanding
+												reputation for innovation,
+												reliability and service
+												excellence. Our engineers
+												configure modular systems that
+												focus on the clients'
+												requirements.
+											</span>
 										</li>
 										<li class="d-flex">
 											<span>
@@ -56,10 +65,11 @@
 													/>
 												</svg>
 											</span>
-											<span class="ms-2"
-												>Lorem ipsum dolor sit amet
-												consectetur.</span
-											>
+											<span class="ms-2">
+												It is our deep desire to
+												establish a mutually beneficial
+												business relationship with you.
+											</span>
 										</li>
 									</ul>
 								</div>
@@ -80,10 +90,19 @@
 													/>
 												</svg>
 											</span>
-											<span class="ms-2"
-												>Consectetur dolor sit, amet
-												sectetur adipisicing.</span
-											>
+											<span class="ms-2">
+												We know your organization
+												success is made possible through
+												its absolute commitment to the
+												provision of excellent services
+												to its clients. We are properly
+												equipped to perform the
+												complementary but critical duty
+												of providing adequate protection
+												against fire/security in any of
+												the projects you may wish to
+												involve us.
+											</span>
 										</li>
 										<li class="d-flex">
 											<span>
@@ -100,10 +119,16 @@
 													/>
 												</svg>
 											</span>
-											<span class="ms-2"
-												>Mollitia qui sit velit, facere,
-												quasi quisquam unde.</span
-											>
+											<span class="ms-2">
+												We are capable of rendering
+												Quality and beneficial services
+												to your organization. Our
+												services ensure safety of lives,
+												properties and critical assets
+												thus ensuring zero loss to
+												business continuity, growth and
+												profitability.
+											</span>
 										</li>
 									</ul>
 								</div>
@@ -113,76 +138,11 @@
 					<div class="col-lg-6 col-md-12">
 						<figure>
 							<img
-								src="/assets/images/about-img/about-hero-img.jpg"
+								src="/assets/images/wal/team/787158ac-3138-42f0-9b51-99c9c26a20b12.jpg"
 								alt="career"
 								class="img-fluid rounded-3"
 							/>
 						</figure>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div
-					class="swiper-container swiper"
-					id="swiper-1"
-					data-pagination-type=""
-					data-speed="400"
-					data-space-between="100"
-					data-pagination="true"
-					data-navigation="false"
-					data-autoplay="true"
-					data-autoplay-delay="3000"
-					data-breakpoints='{"480": {"slidesPerView": 2}, "768": {"slidesPerView": 3}, "1024": {"slidesPerView": 5}}'
-				>
-					<div class="swiper-wrapper pb-6">
-						<div class="swiper-slide">
-							<figure class="text-center">
-								<img
-									src="/assets/images/client-logo/clients-logo-1.svg"
-									alt="logo"
-								/>
-							</figure>
-						</div>
-						<div class="swiper-slide">
-							<figure class="text-center">
-								<img
-									src="/assets/images/client-logo/clients-logo-2.svg"
-									alt="logo"
-								/>
-							</figure>
-						</div>
-						<div class="swiper-slide">
-							<figure class="text-center">
-								<img
-									src="/assets/images/client-logo/clients-logo-3.svg"
-									alt="logo"
-								/>
-							</figure>
-						</div>
-						<div class="swiper-slide">
-							<figure class="text-center">
-								<img
-									src="/assets/images/client-logo/clients-logo-4.svg"
-									alt="logo"
-								/>
-							</figure>
-						</div>
-						<div class="swiper-slide">
-							<figure class="text-center">
-								<img
-									src="/assets/images/client-logo/clients-logo-5.svg"
-									alt="logo"
-								/>
-							</figure>
-						</div>
-						<!-- Add more slides as needed -->
-					</div>
-					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
-					<!-- Add Navigation -->
-					<div class="swiper-navigation">
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
 					</div>
 				</div>
 			</div>
@@ -227,9 +187,10 @@
 
 						<h4>Our Mission</h4>
 						<p class="mb-0">
-							With technology at our core, we build global
-							infrastructure and applications to empower
-							businesses to operate anywhere, anytime.
+							Our Mission is to be 100% committed to flawlessly
+							executing our services with relentless focus on
+							safety, efficiency, rapid response, technical
+							expertise and growth mindset.
 						</p>
 					</div>
 					<div class="col-lg-4 col-md-4">
@@ -250,8 +211,12 @@
 
 						<h4>Our Visions</h4>
 						<p class="mb-0">
-							To be the global economic infrastructure to empower
-							businesses of all sizes to grow without borders.
+							Our Vision is to be the service partner of choice
+							for all of our potential clients, and become
+							renowned as a forward-thinking, progressive
+							organization, operating in line with the best
+							interests of our clients and employees. Because This
+							Is What We Do
 						</p>
 					</div>
 					<div class="col-lg-4 col-md-4">
@@ -281,9 +246,10 @@
 
 						<h4>Our Purpose</h4>
 						<p class="mb-0">
-							To connect the entrepreneurs, business builders,
-							makers and creators with borderless opportunities in
-							every corner of the world.
+							To be 100% committed to the growth, development and
+							future of the, manufacturing industries, oil and gas
+							industries, power sectors, government para-status,
+							individuals among others.
 						</p>
 					</div>
 				</div>
@@ -317,349 +283,14 @@
 					</div>
 					<div class="col-md-3 col-6">
 						<div class="text-center">
-							<h2 class="text-white-stable">4.9</h2>
-							<h5 class="text-white-stable mb-0">
-								Clutch Rating
-							</h5>
+							<h2 class="text-white-stable">4.9/5</h2>
+							<h5 class="text-white-stable mb-0">Satisfaction</h5>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!--Team member end-->
-
-		<!--Success stories-->
-		<section class="py-xl-9 py-5 bg-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-8 offset-xl-2 col-md-8 offset-md-2">
-						<div class="text-center mx-xl-7 mb-5">
-							<h2 class="mb-3">
-								Read the real-life success stories of the
-								companies and industries.
-							</h2>
-							<a
-								href="#!"
-								class="icon-link icon-link-hover fw-semicold"
-							>
-								Browse all customer stories
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="14"
-									height="14"
-									fill="currentColor"
-									class="bi bi-arrow-right"
-									viewBox="0 0 16 16"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-									></path>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="table-responsive-lg">
-					<div class="row flex-nowrap pb-5 me-5 me-lg-0">
-						<div class="col-lg-4 col-md-6">
-							<div class="card shadow-sm h-100">
-								<div class="card-body p-lg-5">
-									<figure class="mb-5">
-										<img
-											src="/assets/images/client-logo/clients-logo-2.svg"
-											alt="logo"
-										/>
-									</figure>
-									<p class="mb-0">
-										“Lorem ipsum dolor sit amet cons ectetur
-										adipiscing elit uisque sagittis risus
-										sed dolor lobortis, non rutrum massa
-										ultricies aecenas tempor, nisi nec
-										tempus lobortis”
-									</p>
-									<div class="mt-4">
-										<h5 class="mb-0">Anita parmar</h5>
-										<small>Content Producer</small>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="card shadow-sm h-100">
-								<div class="card-body p-lg-5">
-									<figure class="mb-5">
-										<img
-											src="/assets/images/client-logo/clients-logo-1.svg"
-											alt="logo"
-										/>
-									</figure>
-									<p class="mb-0">
-										“Aenean pharetra finibus mauris a
-										porttitor. Nam dui tortor, finibus sit
-										amet feugiat porta, tempus in odio.
-										Interdum et malesuada fames ac ante
-										ipsum primis in faucibus.”
-									</p>
-									<div class="mt-4">
-										<h5 class="mb-0">Jitu Chauhan</h5>
-										<small>Studio Manager</small>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="card shadow-sm h-100">
-								<div class="card-body p-lg-5">
-									<figure class="mb-5">
-										<img
-											src="/assets/images/client-logo/clients-logo-3.svg"
-											alt="logo"
-										/>
-									</figure>
-									<p class="mb-0">
-										“Pellentesque sit amet turpis porta
-										augue pretium dictum. Pellentesque
-										commodo bitur ut massa cursus, congue
-										augue vitae, efficitur metus.”
-									</p>
-									<div class="mt-4">
-										<h5 class="mb-0">Sandip Chauhan</h5>
-										<small
-											>Senior Research Program
-											Manager</small
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Success stories-->
-
-		<!--Save your time start-->
-		<section class="my-lg-9 my-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 offset-lg-2 col-md-12">
-						<div class="text-center mb-xl-7 mb-5 mx-xl-8">
-							<h2 class="mb-0">
-								Save your time and money by choosing Our highly
-								performant team.
-							</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row g-5">
-					<div class="col-lg-3 col-md-6">
-						<div class="card text-center card-lift">
-							<div class="card-body py-5">
-								<figure class="mb-4">
-									<img
-										src="/assets/images/team/team-img-4.jpg"
-										alt="avatar"
-										class="avatar avatar-xxl rounded-circle"
-									/>
-								</figure>
-
-								<h5 class="mb-1">Jitu Chauhan</h5>
-								<small>Co-Founder & CEO</small>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="card text-center card-lift">
-							<div class="card-body py-5">
-								<figure class="mb-4">
-									<img
-										src="/assets/images/avatar/avatar-3.jpg"
-										alt="avatar"
-										class="avatar avatar-xxl rounded-circle"
-									/>
-								</figure>
-
-								<h5 class="mb-1">Anita Parmar</h5>
-								<small>Product Manager</small>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="card text-center card-lift">
-							<div class="card-body py-5">
-								<figure class="mb-4">
-									<img
-										src="/assets/images/avatar/avatar-1.jpg"
-										alt="avatar"
-										class="avatar avatar-xxl rounded-circle"
-									/>
-								</figure>
-
-								<h5 class="mb-1">Sandip Chauhan</h5>
-								<small>Developer</small>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="card text-center card-lift">
-							<div class="card-body py-5">
-								<figure class="mb-4">
-									<img
-										src="/assets/images/avatar/avatar-2.jpg"
-										alt="avatar"
-										class="avatar avatar-xxl rounded-circle"
-									/>
-								</figure>
-
-								<h5 class="mb-1">Manasvi Suthar</h5>
-								<small>Co-Founder</small>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="card text-center card-lift">
-							<div class="card-body py-5">
-								<figure class="mb-4">
-									<img
-										src="/assets/images/avatar/avatar-6.jpg"
-										alt="avatar"
-										class="avatar avatar-xxl rounded-circle"
-									/>
-								</figure>
-
-								<h5 class="mb-1">Shweta Singh</h5>
-								<small>Sales Team Lead</small>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="card text-center card-lift">
-							<div class="card-body py-5">
-								<figure class="mb-4">
-									<img
-										src="/assets/images/avatar/avatar-4.jpg"
-										alt="avatar"
-										class="avatar avatar-xxl rounded-circle"
-									/>
-								</figure>
-
-								<h5 class="mb-1">Rohan Kacha</h5>
-								<small>UX Designer</small>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="card text-center card-lift">
-							<div class="card-body py-5">
-								<figure class="mb-4">
-									<img
-										src="/assets/images/avatar/avatar-7.jpg"
-										alt="avatar"
-										class="avatar avatar-xxl rounded-circle"
-									/>
-								</figure>
-
-								<h5 class="mb-1">Vallabh Sompura</h5>
-								<small>Product Designer</small>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="card text-center card-lift">
-							<div class="card-body py-5">
-								<figure class="mb-4">
-									<img
-										src="/assets/images/avatar/fallback.jpg"
-										alt="avatar"
-										class="avatar avatar-xxl rounded-circle"
-									/>
-								</figure>
-
-								<h5 class="mb-1">Your Pic</h5>
-								<a
-									href="#"
-									class="icon-link icon-link-hover fw-semicold"
-								>
-									Join the team
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										fill="currentColor"
-										class="bi bi-arrow-right"
-										viewBox="0 0 16 16"
-									>
-										<path
-											fill-rule="evenodd"
-											d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-										></path>
-									</svg>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Save your time end-->
-
-		<!--Our awards start-->
-		<section class="my-lg-9 my-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="mb-xl-7 mb-5">
-							<h2 class="mb-3">Our awards</h2>
-							<p class="mb-0">
-								We're grateful to have won a few awards along
-								the way. Thank you to our community for always
-								pushing us to do better and build bigger.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row g-6">
-					<div class="col-lg-3 col-md-6 col-12">
-						<figure class="text-center">
-							<img
-								src="/assets/images/award-logo/award-logo-1.svg"
-								alt="logo"
-								class
-							/>
-						</figure>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<figure class="text-center">
-							<img
-								src="/assets/images/award-logo/award-logo-2.svg"
-								alt="logo"
-								class
-							/>
-						</figure>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<figure class="text-center">
-							<img
-								src="/assets/images/award-logo/award-logo-4.svg"
-								alt="logo"
-								class
-							/>
-						</figure>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<figure class="text-center">
-							<img
-								src="/assets/images/award-logo/award-logo-3.svg"
-								alt="logo"
-								class
-							/>
-						</figure>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Our awards start-->
 
 		<!--Speak with expert start-->
 		<section class="my-9">
@@ -673,11 +304,12 @@
 								Want to speak with a expert?
 							</h2>
 							<p class="text-white-50 px-lg-7 mb-5">
-								We’d love to hear about your brand and business
+								We’d love to hear about your safety needs and
 								challenges, even if you’re not sure what your
-								next step is. No pitch, no strings attached.
+								next step is. No pressure, no commitments—just
+								here to help keep you safe.
 							</p>
-							<a href="#!" class="btn btn-dark">Let's talk</a>
+							<NuxtLink to="/contact-us" class="btn btn-dark">Let's talk</NuxtLink>
 						</div>
 					</div>
 				</div>

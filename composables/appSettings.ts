@@ -23,7 +23,7 @@ export const useAppSettings = () => {
 		},
 		{
 			name: "Contact",
-			path: "contact-us",
+			path: "/contact-us",
 		},
 	]);
 	const setActiveNav = (active: string) => {

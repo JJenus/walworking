@@ -76,28 +76,28 @@ export default defineNuxtConfig({
 				},
 			],
 			script: [
-				{ async: true, src: "/assets/js/vendors/color-modes.js" },
-
+				{ src: "/assets/js/vendors/color-modes.js", defer: true },
 				{
 					src: "/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js",
+					defer: true,
 				},
+				{ src: "/assets/libs/scrollcue/scrollCue.min.js", defer: true },
 				{
-					async: true,
-					src: "/assets/libs/simplebar/dist/simplebar.min.js",
-				},
-				{
-					async: true,
 					src: "/assets/libs/headhesive/dist/headhesive.min.js",
+					defer: true,
 				},
-				{ async: true, src: "/assets/js/theme.min.js" },
 				{
-					async: true,
-					src: "/assets/libs/jarallax/dist/jarallax.min.js",
+					src: "/assets/libs/simplebar/dist/simplebar.min.js",
+					defer: true,
 				},
-				{ async: true, src: "/assets/js/vendors/jarallax.js" },
-				{ async: true, src: "/assets/libs/scrollcue/scrollCue.min.js" },
-				{ async: true, src: "/assets/js/vendors/scrollcue.js" },
-				{ async: true, src: "/assets/js/vendors/parallax.js" },
+				{
+					src: "/assets/libs/jarallax/dist/jarallax.min.js",
+					defer: true,
+				}, // Jarallax first
+				{ src: "/assets/js/vendors/jarallax.js", defer: true }, // Related to Jarallax
+				{ src: "/assets/js/vendors/parallax.js", defer: true }, // Parallax after Jarallax
+				{ src: "/assets/js/vendors/scrollcue.js", defer: true }, // Utility scripts after core
+				{ src: "/assets/js/theme.min.js", defer: true },
 			],
 
 			link: [

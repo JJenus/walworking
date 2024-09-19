@@ -10,17 +10,17 @@
 	<div>
 		<!--hero start-->
 		<section
-			class="jarallax py-9 hero-agency"
+			class="jarallax py-9 hero-agency mb-8 mb-lg-0"
 			data-jarallax
 			data-speed="0.4"
 		>
 			<img
 				class="jarallax-img"
-				src="/assets//images/wal/back-view-firefighters-trying-put-out-wildfire.jpg"
+				src="/assets/images/wal/back-view-firefighters-trying-put-out-wildfire.jpg"
 				alt="agency"
 			/>
 			<div class="position-absolute start-0 end-0">
-				<div class="container">
+				<div class="container pt-15">
 					<div class="row justify-content-between">
 						<div
 							class="order-2 order-lg-1 col-xl-5 col-lg-7 col-12"
@@ -50,12 +50,14 @@
 								>
 							</div>
 						</div>
-						<div class="col-12 col-lg-3 order-1 order-lg-2">
-							<img
-								class="w-100"
-								src="/assets/images/logo/logo-w.png"
-								alt=""
-							/>
+						<div class="col-12 col-lg-3 order-1 order-lg-2 pt-10 pt-lg-0">
+							<div class="d-flex align-items-center justify-content-center">
+								<img
+									class="w-50 w-lg-100"
+									src="/assets/images/logo/logo-w.png"
+									alt=""
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -64,7 +66,7 @@
 		<!--hero end-->
 
 		<!--Logo section start-->
-		<div class="container" data-cue="fadeIn">
+		<div class="container mt-5 mt-lg-0" data-cue="fadeIn">
 			<div class="row border-top border-bottom fs-1">
 				<div
 					class="col-md-4 border-end-md border-bottom border-bottom-md-0 py-3"
@@ -679,9 +681,7 @@
 							</div>
 
 							<h4>Award winning agency</h4>
-							<p class="mb-0">
-								
-							</p>
+							<p class="mb-0"></p>
 						</div>
 					</div>
 					<div class="col-md-4" data-cue="zoomIn">
@@ -702,9 +702,7 @@
 							</div>
 
 							<h4>10 Year Exp.</h4>
-							<p class="mb-0">
-								
-							</p>
+							<p class="mb-0"></p>
 						</div>
 					</div>
 				</div>

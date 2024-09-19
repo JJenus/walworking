@@ -25,22 +25,25 @@
 						/>
 					</NuxtLink>
 					<button
-						class="navbar-toggler offcanvas-nav-btn"
+						class="d-lg-none btn btn-sm rounded-circle btn-icon border-2 btn-outline-primary offcanvas-nav-btn" 
 						type="button"
 					>
-						<i class="bi bi-list"></i>
+						<i class="bi bi-list fs-3 fw-bold"></i>
 					</button>
 					<div
 						class="offcanvas offcanvas-start offcanvas-nav"
 						style="width: 20rem"
 					>
 						<div class="offcanvas-header">
-							<a href="index-2.html" class="text-inverse"
-								><img src="/assets/images/logo/logo.svg"
-							/></a>
+							<a href="index-2.html" class="text-inverse">
+								<LazyLogo styles="width: 40px;" />
+								<span class="ms-2 fw-bold">{{
+									$config.public.APP
+								}}</span>
+							</a>
 							<button
 								type="button"
-								class="btn-close"
+								class="btn-close rounded-circle border-1 btn-sm"
 								data-bs-dismiss="offcanvas"
 								aria-label="Close"
 							></button>
@@ -49,11 +52,12 @@
 							<ul
 								class="navbar-nav mx-auto align-items-lg-center"
 							>
-								<li v-for="nav in navs" lass="nav-item">
+								<li data-bs-dismiss="offcanvas" v-for="nav in navs" lass="nav-item">
 									<NuxtLink
 										class="nav-link"
 										:to="nav.path"
 										role="button"
+										
 									>
 										<span
 											:class="

@@ -40,7 +40,7 @@
 <template>
 	<div class="position-relative">
 		<Header />
-		<main>
+		<main class="pt-8 pt-lg-0">
 			<slot />
 		</main>
 		<Footer />

@@ -8,8 +8,10 @@
 					<div class="col-lg-6 offset-lg-1 col-md-12 col-12">
 						<h1 class="mb-3">Contact us</h1>
 						<p class="mb-0 lead">
-							Please reach out to us if you have questions about
-							our enterprise offerings, or anything else.
+							Please reach out to us with any questions about our
+							safety solutions or anything else. We're here to
+							help ensure your safety and provide the best
+							solutions for your needs.
 						</p>
 					</div>
 				</div>
@@ -171,11 +173,14 @@
 									<div>
 										<h4>Technical support</h4>
 										<p class="mb-0">
-											Found a persistent bug, or need help
-											setting a new team member up? Can’t
-											crack a feature?
+											Facing an ongoing safety issue or
+											need help setting up safety
+											protocols for a new team member?
+											Struggling with a safety feature?
+
 											<a href="#" class="text-primary"
-												>Let us know!</a
+												>Let us know, and we'll assist
+												you right away!</a
 											>
 										</p>
 									</div>
@@ -203,12 +208,13 @@
 									<div>
 										<h4>General chat</h4>
 										<p class="mb-0">
-											Billing issues, customizations, plan
-											changes--anything that doesn’t fit
-											in the other two brackets, goes
-											here.
+											Questions about safety compliance,
+											custom solutions, or plan
+											adjustments? Anything that doesn’t
+											fall under the other categories can
+											be discussed here.
 											<a href="#" class="text-primary"
-												>Start Chat</a
+												>Start a chat with us!</a
 											>
 										</p>
 									</div>
@@ -236,11 +242,12 @@
 									<div>
 										<h4>Help Center</h4>
 										<p class="mb-0">
-											Want to share feedback on an
-											existing feature or suggest a new
-											one? Talk to us!
+											Have feedback on a safety feature or
+											want to suggest a new one? We’re
+											here to listen!
 											<a href="#" class="text-primary"
-												>Visit Help Center</a
+												>Visit our Help Center to share
+												your ideas.</a
 											>
 										</p>
 									</div>
@@ -258,13 +265,13 @@
 			<div class="container">
 				<div class="row g-4">
 					<div class="col-lg-12 col-md-12 col-12">
-						<h2 class="mb-lg-7">Our offices around the world</h2>
+						<h2 class="mb-lg-7">Our Primary Location</h2>
 					</div>
 					<div class="col-lg-3 col-md-6 col-12">
-						<h3 class="mb-3">India</h3>
+						<h3 class="mb-3">Lagos</h3>
 						<figure class="mb-3 card-lift">
 							<img
-								src="/assets/images/location/location-1.jpg"
+								src="/assets/images/wal/gettyimages-1153881717-612x612.jpg"
 								alt="location"
 								class="img-fluid rounded-3"
 							/>
@@ -285,107 +292,15 @@
 								</svg>
 							</div>
 							<div class="ms-2">
-								<span
-									>WeWork, 412, Residency Rd, Shanthala Nagar,
-									Ashok Nagar, Bengaluru, Karnataka
-									560025</span
-								>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<h3 class="mb-3">Australia</h3>
-						<figure class="mb-3 card-lift">
-							<img
-								src="/assets/images/location/location-2.jpg"
-								alt="location"
-								class="img-fluid rounded-3"
-							/>
-						</figure>
-						<div class="d-flex">
-							<div>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="16"
-									height="16"
-									fill="currentColor"
-									class="bi bi-geo-alt-fill text-primary"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-									/>
-								</svg>
-							</div>
-							<div class="ms-2">
-								<span
-									>12/125 Collins St, Melbourne, Victoria,
-									3000 Australia</span
-								>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<h3 class="mb-3">Brazil</h3>
-						<figure class="mb-3 card-lift">
-							<img
-								src="/assets/images/location/location-3.jpg"
-								alt="location"
-								class="img-fluid rounded-3"
-							/>
-						</figure>
-						<div class="d-flex">
-							<div>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="16"
-									height="16"
-									fill="currentColor"
-									class="bi bi-geo-alt-fill text-primary"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-									/>
-								</svg>
-							</div>
-							<div class="ms-2">
-								<span
-									>Oscar Freire, 678 - Jardim Paulista São
-									Paulo - SP 01426-001, Brazil</span
-								>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<h3 class="mb-3">Canada</h3>
-						<figure class="mb-3 card-lift">
-							<img
-								src="/assets/images/location/location-4.jpg"
-								alt="location"
-								class="img-fluid rounded-3"
-							/>
-						</figure>
-						<div class="d-flex">
-							<div>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="16"
-									height="16"
-									fill="currentColor"
-									class="bi bi-geo-alt-fill text-primary"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-									/>
-								</svg>
-							</div>
-							<div class="ms-2">
-								<span
-									>458 Av. Viger O Montréal, QC H2Z 1M9
-									Canada</span
-								>
+								<span class="fw-bold">
+									15 Custom Street Alakuko Lagos/Abeokuta
+									Expressway, Lagos State, Nigeria.
+								</span>
+								<br />
+								<span>
+									Our main location is in Lagos, but our
+									services extend beyond the city.
+								</span>
 							</div>
 						</div>
 					</div>
