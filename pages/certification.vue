@@ -21,14 +21,14 @@
 		<section class="pt-4 mt-lg-n8">
 			<div class="container price-wrapper">
 				<div
-					class="row flex-nowrap pb-4 me-5 me-lg-0 justify-content-center"
+					class="row pb-4 justify-content-center"
 				>
 					<div class="col-md-8 col-12">
 						<!--card-->
-						<div class="card bg-dark border-0">
-							<div class="card-body text-white">
+						<div class="card bg-primary border-0">
+							<div class="card-body p-1">
 								<NuxtImg
-									class="w-100"
+									class="w-100 rounded"
 									src="/assets/images/wal/certificate-of-incorporation.png"
 								/>
 							</div>

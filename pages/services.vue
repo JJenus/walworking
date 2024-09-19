@@ -34,7 +34,7 @@
 						<div
 							class="p-3 icon-xl icon-shape rounded bg-primary bg-opacity-10 mb-5 border border-primary-subtle"
 						>
-						<i class="fa-solid fa-fire-extinguisher fs-3"></i>
+							<i class="fa-solid fa-fire-extinguisher fs-3"></i>
 						</div>
 						<div class="mb-5">
 							<h2 class="mb-2">Fire Protection Services</h2>
@@ -84,15 +84,19 @@
 							>
 							<span
 								class="fs-6 badge bg-secondary-subtle border bg-secondary-subtle text-dark-emphasis rounded-pill py-2 px-3"
-								>Fire suppression system installation (e.g.,
-								sprinklers, gas suppression)</span
+								>Fire suppression system installation
+								<span class="d-none d-md-inline"
+									>(e.g., sprinklers, gas suppression)</span
+								></span
 							>
 						</div>
 					</div>
-					<div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2 border">
+					<div
+						class="col-lg-5 offset-lg-2 col-md-6 order-lg-2 border"
+					>
 						<figure class="mb-5 mb-md-0">
 							<img
-								src="/assets/images/service/service-img-1.jpg"
+								src="/assets/images/wal/team/fire-alarm-system-installation .jpg"
 								alt="service"
 								class="rounded-3 img-fluid"
 							/>
@@ -109,7 +113,7 @@
 					<div class="col-lg-5 col-md-6">
 						<figure class="mb-5 mb-md-0">
 							<img
-								src="/assets/images/service/service-img-2.jpg"
+								src="/assets/images/wal/team/787158ac-3138-42f0-9b51-99c9c26a20b12.jpg"
 								alt="service"
 								class="rounded-3 img-fluid"
 							/>
@@ -320,7 +324,7 @@
 					<div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
 						<figure class="mb-5 mb-md-0">
 							<img
-								src="/assets/images/service/service-img-3.jpg"
+								src="/assets/images/wal/team/construction-works.jpg"
 								alt="service"
 								class="rounded-3 img-fluid"
 							/>
