@@ -36,46 +36,48 @@ export default defineNuxtConfig({
 		head: {
 			meta: [
 				{
-				  name: "viewport",
-				  content: "width=device-width, initial-scale=1",
+					name: "viewport",
+					content: "width=device-width, initial-scale=1",
 				},
 				{
-				  name: "twitter:card",
-				  content:
-					"Expert fire protection, construction, and consulting services tailored to your needs.",
+					name: "twitter:card",
+					content:
+						"Expert fire protection, construction, and consulting services tailored to your needs.",
 				},
 				{
-				  name: "twitter:title",
-				  content: "WalWorking Technologies",
+					name: "twitter:title",
+					content: "WalWorking Technologies",
 				},
 				{
-				  name: "twitter:description",
-				  content:
-					"Providing cutting-edge fire protection, construction, and consulting services to ensure safety and efficiency.",
+					name: "twitter:description",
+					content:
+						"Providing cutting-edge fire protection, construction, and consulting services to ensure safety and efficiency.",
 				},
 				{
-				  name: "twitter:image",
-				  content: "https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
+					name: "twitter:image",
+					content:
+						"https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
 				},
 				{
-				  property: "og:title",
-				  content: "WalWorking Technologies",
+					property: "og:title",
+					content: "WalWorking Technologies",
 				},
 				{
-				  property: "og:description",
-				  content:
-					"Leading provider of fire safety, construction, and consulting solutions for businesses and individuals.",
+					property: "og:description",
+					content:
+						"Leading provider of fire safety, construction, and consulting solutions for businesses and individuals.",
 				},
 				{
-				  property: "og:image",
-				  content: "https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
+					property: "og:image",
+					content:
+						"https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
 				},
 				{
-				  property: "og:url",
-				  content: "https://walworkingtechnologies.vercel.app/",
+					property: "og:url",
+					content: "https://walworkingtechnologies.vercel.app/",
 				},
-			  ],
-			  
+			],
+
 			script: [
 				{ src: "/assets/js/vendors/color-modes.js", defer: true },
 				{
@@ -84,7 +86,7 @@ export default defineNuxtConfig({
 				},
 				{ src: "/assets/libs/scrollcue/scrollCue.min.js", defer: true },
 				{
-					src: "/assets/libs/headhesive/dist/headhesive.min.js",
+					src: "https://cdnjs.cloudflare.com/ajax/libs/headhesive/1.2.4/headhesive.min.js",
 					defer: true,
 				},
 				{
