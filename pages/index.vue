@@ -16,7 +16,7 @@
 		>
 			<img
 				class="jarallax-img"
-				src="/assets/images/wal/back-view-firefighters-trying-put-out-wildfire.jpg"
+				src="/assets//images/wal/back-view-firefighters-trying-put-out-wildfire.jpg"
 				alt="agency"
 			/>
 			<div class="position-absolute start-0 end-0">
