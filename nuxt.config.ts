@@ -81,8 +81,8 @@ export default defineNuxtConfig({
 			script: [
 				{ src: "/assets/js/vendors/color-modes.js", defer: true },
 				{
-					src: "/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js",
-					// defer: true,
+					src: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js ",
+					defer: true,
 				},
 				{ src: "/assets/libs/scrollcue/scrollCue.min.js", defer: true },
 				{
@@ -90,8 +90,8 @@ export default defineNuxtConfig({
 					defer: true,
 				},
 				{
-					src: "/assets/libs/simplebar/dist/simplebar.min.js",
-					// defer: true,
+					src: "https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.7/simplebar.min.js",
+					defer: true,
 				},
 				{
 					src: "https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.2.1/jarallax.min.js",
@@ -114,7 +114,7 @@ export default defineNuxtConfig({
 				},
 				{
 					rel: "stylesheet",
-					href: "/assets/libs/simplebar/dist/simplebar.min.css",
+					href: "https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.7/simplebar.min.css",
 				},
 				{
 					rel: "stylesheet",
