@@ -16,7 +16,7 @@
 		>
 			<img
 				class="jarallax-img"
-				src="/assets//images/wal/back-view-firefighters-trying-put-out-wildfire.jpg"
+				src="/assets/images/wal/back-view-firefighters-trying-put-out-wildfire.jpg"
 				alt="agency"
 			/>
 			<div class="position-absolute start-0 end-0">
@@ -134,7 +134,7 @@
 								>
 									<a href="portfolio-single.html">
 										<img
-											src="/assets//images/portfolio/portfolio-img-1.jpg"
+											src="/assets/images/portfolio/portfolio-img-1.jpg"
 											alt="portfolio-2"
 											class="img-fluid rounded-3"
 										/>
@@ -166,7 +166,7 @@
 								>
 									<a href="portfolio-single.html">
 										<img
-											src="/assets//images/portfolio/portfolio-img-5.jpg"
+											src="/assets/images/portfolio/portfolio-img-5.jpg"
 											alt="portfolio-2"
 											class="img-fluid rounded-3"
 										/>
@@ -197,7 +197,7 @@
 								>
 									<a href="portfolio-single.html">
 										<img
-											src="/assets//images/portfolio/portfolio-img-4.jpg"
+											src="/assets/images/portfolio/portfolio-img-4.jpg"
 											alt="portfolio-2"
 											class="img-fluid rounded-3"
 										/>
@@ -802,7 +802,7 @@
 												class="d-flexi d-none align-items-center"
 											>
 												<img
-													src="/assets//images/avatar/avatar-7.jpg"
+													src="/assets/images/avatar/avatar-7.jpg"
 													alt="Avatar"
 													class="avatar avatar-lg rounded-circle"
 												/>

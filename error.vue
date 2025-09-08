@@ -27,7 +27,7 @@
 								class="position-absolute top-0"
 								data-depth="0.5"
 							>
-								<img src="/assets//images/error/stars.svg" />
+								<img src="/assets/images/error/stars.svg" />
 							</div>
 						</div>
 						<div
@@ -35,7 +35,7 @@
 							data-relative-input="true"
 						>
 							<div class="position-absolute" data-depth="0.1">
-								<img src="/assets//images/error/rocket.svg" />
+								<img src="/assets/images/error/rocket.svg" />
 							</div>
 						</div>
 						<div
@@ -47,7 +47,7 @@
 								style="margin-top: -80px; margin-left: -80px"
 								data-depth="0.1"
 							>
-								<img src="/assets//images/error/globe.svg" />
+								<img src="/assets/images/error/globe.svg" />
 							</div>
 						</div>
 						<div
@@ -59,7 +59,7 @@
 								data-depth="0.1"
 							>
 								<img
-									src="/assets//images/error/astronut.svg"
+									src="/assets/images/error/astronut.svg"
 									style="
 										top: -110px;
 										position: absolute;
@@ -70,7 +70,7 @@
 						</div>
 						<div class="position-relative z-n1">
 							<img
-								src="/assets//images/error/404-number.svg"
+								src="/assets/images/error/404-number.svg"
 								class="img-fluid"
 							/>
 						</div>
@@ -82,7 +82,7 @@
 								class="position-absolute start-100 bottom-0"
 								data-depth="0.1"
 							>
-								<img src="/assets//images/error/planet.svg" />
+								<img src="/assets/images/error/planet.svg" />
 							</div>
 						</div>
 					</div>
