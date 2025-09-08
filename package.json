@@ -1,28 +1,47 @@
 {
-  "name": "nuxt-app",
+  "name": "walworking-technologies",
   "private": true,
   "type": "module",
+  "version": "1.0.0",
+  "description": "WalWorking Technologies - Fire Protection, Construction & Consulting Services",
+  "keywords": ["fire-protection", "construction", "consulting", "safety", "nigeria"],
+  "author": "WalWorking Technologies Limited",
+  "license": "MIT",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview --dotenv .env",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "type-check": "nuxt typecheck"
   },
   "dependencies": {
-    "@nuxt/image": "^1.7.0",
-    "axios": "^1.5.0",
-    "cleave.js": "^1.6.0",
-    "currency.js": "^2.0.4",
-    "express": "^4.18.2",
-    "ipx": "^3.0.1",
-    "moment": "^2.29.4",
-    "nuxt": "^3.12.4",
+    "@nuxt/image": "^1.8.0",
+    "@nuxtjs/seo": "^2.0.0-rc.18",
+    "@vueuse/core": "^11.0.3",
+    "@vueuse/nuxt": "^11.0.3",
+    "bootstrap": "^5.3.3",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.13",
+    "nuxt": "^3.13.2",
     "nuxt-swiper": "^1.2.2",
-    "qrcode": "^1.5.3",
-    "stompjs": "^2.3.3",
-    "sweetalert2": "^11.6.13",
-    "swiper": "^10.3.1",
-    "vue": "latest"
+    "qrcode": "^1.5.4",
+    "sass": "^1.79.4",
+    "sweetalert2": "^11.14.1",
+    "swiper": "^11.1.14",
+    "vue": "^3.5.10"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.5.7",
+    "@nuxt/typescript": "^2.8.1",
+    "@types/qrcode": "^1.5.5",
+    "eslint": "^9.12.0",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
