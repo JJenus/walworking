@@ -2,13 +2,24 @@
 export default defineNuxtConfig({
 	compatibilityDate: "2024-04-03",
 	devtools: { enabled: true },
-	modules: ["nuxt-swiper", "@nuxt/image"],
+	modules: [
+		"nuxt-swiper", 
+		"@nuxt/image",
+		"@nuxtjs/seo",
+		"@vueuse/nuxt"
+	],
 
 	ssr: true,
 
+	// Modern CSS configuration
+	css: [
+		'bootstrap/dist/css/bootstrap.min.css',
+		'~/assets/css/main.scss'
+	],
+
+	// Image optimization
 	image: {
 		format: ["webp", "avif", "jpeg", "jpg", "png", "gif"],
-		// The screen sizes predefined by `@nuxt/image`:
 		screens: {
 			xs: 320,
 			sm: 576,
@@ -18,8 +29,19 @@ export default defineNuxtConfig({
 			xxl: 1400,
 			"2xl": 1536,
 		},
+		quality: 85,
+		densities: [1, 2],
 	},
 
+	// SEO Configuration
+	site: {
+		url: 'https://walworkingtechnologies.com',
+		name: 'WalWorking Technologies',
+		description: 'Expert fire protection, construction, and consulting services tailored to your needs.',
+		defaultLocale: 'en',
+	},
+
+	// Runtime configuration
 	runtimeConfig: {
 		public: {
 			BE_API: "https://Walworkingtechnologies.alwaysdata.net",
@@ -32,17 +54,24 @@ export default defineNuxtConfig({
 		},
 	},
 
+	// App configuration with modern meta tags
 	app: {
 		head: {
+			htmlAttrs: {
+				lang: 'en'
+			},
 			meta: [
 				{
 					name: "viewport",
 					content: "width=device-width, initial-scale=1",
 				},
 				{
+					name: "theme-color",
+					content: "#226b8d"
+				},
+				{
 					name: "twitter:card",
-					content:
-						"Expert fire protection, construction, and consulting services tailored to your needs.",
+					content: "summary_large_image",
 				},
 				{
 					name: "twitter:title",
@@ -50,13 +79,11 @@ export default defineNuxtConfig({
 				},
 				{
 					name: "twitter:description",
-					content:
-						"Providing cutting-edge fire protection, construction, and consulting services to ensure safety and efficiency.",
+					content: "Expert fire protection, construction, and consulting services tailored to your needs.",
 				},
 				{
 					name: "twitter:image",
-					content:
-						"https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
+					content: "https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
 				},
 				{
 					property: "og:title",
@@ -64,72 +91,22 @@ export default defineNuxtConfig({
 				},
 				{
 					property: "og:description",
-					content:
-						"Leading provider of fire safety, construction, and consulting solutions for businesses and individuals.",
+					content: "Leading provider of fire safety, construction, and consulting solutions for businesses and individuals.",
 				},
 				{
 					property: "og:image",
-					content:
-						"https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
+					content: "https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
 				},
 				{
 					property: "og:url",
 					content: "https://walworkingtechnologies.vercel.app/",
 				},
+				{
+					property: "og:type",
+					content: "website",
+				},
 			],
-
-			script: [
-				{ src: "/assets/js/vendors/color-modes.js", defer: true },
-				{
-					src: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js ",
-					defer: true,
-				},
-				{ src: "/assets/libs/scrollcue/scrollCue.min.js", defer: true },
-				{
-					src: "https://cdnjs.cloudflare.com/ajax/libs/headhesive/1.2.4/headhesive.min.js",
-					defer: true,
-				},
-				{
-					src: "https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.7/simplebar.min.js",
-					defer: true,
-				},
-				{
-					src: "https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.2.1/jarallax.min.js",
-					defer: true,
-				}, // Jarallax first
-				{
-					src: "https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js",
-					defer: true,
-				},
-				{ src: "/assets/js/vendors/jarallax.js", defer: true }, // Related to Jarallax
-				{ src: "/assets/js/vendors/parallax.js", defer: true }, // Parallax after Jarallax
-				{ src: "/assets/js/vendors/scrollcue.js", defer: true }, // Utility scripts after core
-				{ src: "/assets/js/theme.min.js", defer: true },
-			],
-
 			link: [
-				{
-					href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css",
-					rel: "stylesheet",
-				},
-				{
-					rel: "stylesheet",
-					href: "https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.7/simplebar.min.css",
-				},
-				{
-					rel: "stylesheet",
-					href: "/assets/libs/bootstrap-icons/font/bootstrap-icons.min.css",
-				},
-				{
-					rel: "stylesheet",
-					href: "/assets/libs/scrollcue/scrollCue.css",
-				},
-				{
-					rel: "stylesheet",
-					href: "/assets/fonts/css/boxicons.min.css",
-				},
-				{ rel: "stylesheet", href: "/assets/css/theme.min.css" },
-
 				{
 					rel: "icon",
 					type: "image/x-icon",
@@ -157,7 +134,48 @@ export default defineNuxtConfig({
 					rel: "apple-touch-icon",
 					href: "/assets/images/favicon/apple-touch-icon.png",
 				},
+				{
+					rel: "manifest",
+					href: "/assets/images/favicon/site.webmanifest",
+				},
 			],
 		},
 	},
+
+	// Build optimization
+	build: {
+		transpile: ['gsap']
+	},
+
+	// Vite configuration for modern bundling
+	vite: {
+		css: {
+			preprocessorOptions: {
+				scss: {
+					additionalData: '@use "~/assets/css/variables.scss" as *;'
+				}
+			}
+		},
+		optimizeDeps: {
+			include: ['bootstrap']
+		}
+	},
+
+	// TypeScript configuration
+	typescript: {
+		strict: true,
+		typeCheck: true
+	},
+
+	// Experimental features
+	experimental: {
+		payloadExtraction: false,
+		viewTransition: true
+	},
+
+	// Nitro configuration for better performance
+	nitro: {
+		compressPublicAssets: true,
+		minify: true
+	}
 });

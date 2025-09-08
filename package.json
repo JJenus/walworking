@@ -2,7 +2,7 @@
   "name": "walworking-technologies",
   "private": true,
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "WalWorking Technologies - Fire Protection, Construction & Consulting Services",
   "keywords": ["fire-protection", "construction", "consulting", "safety", "nigeria"],
   "author": "WalWorking Technologies Limited",
@@ -15,30 +15,29 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "type-check": "nuxt typecheck"
+    "type-check": "nuxt typecheck",
+    "analyze": "nuxt analyze"
   },
   "dependencies": {
-    "@nuxt/image": "^1.8.0",
-    "@nuxtjs/seo": "^2.0.0-rc.18",
-    "@vueuse/core": "^11.0.3",
-    "@vueuse/nuxt": "^11.0.3",
+    "@nuxt/image": "^1.8.1",
+    "@nuxtjs/seo": "^2.0.0-rc.21",
+    "@vueuse/core": "^11.1.0",
+    "@vueuse/nuxt": "^11.1.0",
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.5",
     "lenis": "^1.1.13",
     "nuxt": "^3.13.2",
     "nuxt-swiper": "^1.2.2",
-    "qrcode": "^1.5.4",
-    "sass": "^1.79.4",
-    "sweetalert2": "^11.14.1",
+    "sass": "^1.80.6",
     "swiper": "^11.1.14",
-    "vue": "^3.5.10"
+    "vue": "^3.5.12"
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.5.7",
     "@nuxt/typescript": "^2.8.1",
-    "@types/qrcode": "^1.5.5",
-    "eslint": "^9.12.0",
-    "typescript": "^5.6.2"
+    "@types/bootstrap": "^5.2.10",
+    "eslint": "^9.14.0",
+    "typescript": "^5.6.3"
   },
   "engines": {
     "node": ">=18.0.0",

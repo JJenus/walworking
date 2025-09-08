@@ -1,0 +1,142 @@
+// Brand Color Palette - WalWorking Technologies
+// Primary Brand Colors
+$primary: #226b8d;        // Brand Blue
+$secondary: #ff5d53;      // Accent Orange/Red
+
+// Extended Primary Palette
+$primary-50: #f0f7fa;
+$primary-100: #d9eaf2;
+$primary-200: #b8d8e7;
+$primary-300: #8cc0d7;
+$primary-400: #5aa1c2;
+$primary-500: $primary;   // #226b8d
+$primary-600: #1e5f7e;
+$primary-700: #1a526e;
+$primary-800: #16455c;
+$primary-900: #12394a;
+
+// Extended Secondary Palette
+$secondary-50: #fff5f5;
+$secondary-100: #ffe3e1;
+$secondary-200: #ffccc8;
+$secondary-300: #ffa8a1;
+$secondary-400: #ff7a6b;
+$secondary-500: $secondary; // #ff5d53
+$secondary-600: #e5453b;
+$secondary-700: #cc3d33;
+$secondary-800: #b3352c;
+$secondary-900: #992d25;
+
+// System Colors
+$success: #10b981;        // Green
+$info: #3b82f6;          // Blue
+$warning: #f59e0b;       // Amber
+$danger: #ef4444;        // Red
+$light: #f8fafc;         // Light Gray
+$dark: #1e293b;          // Dark Gray
+
+// Neutral Palette
+$gray-50: #f8fafc;
+$gray-100: #f1f5f9;
+$gray-200: #e2e8f0;
+$gray-300: #cbd5e1;
+$gray-400: #94a3b8;
+$gray-500: #64748b;
+$gray-600: #475569;
+$gray-700: #334155;
+$gray-800: #1e293b;
+$gray-900: #0f172a;
+
+// Typography
+$font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-family-heading: 'Truculenta', sans-serif;
+$font-family-accent: 'Lobster', cursive;
+
+$font-size-base: 1rem;
+$font-size-sm: 0.875rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+$line-height-tight: 1.25;
+$line-height-snug: 1.375;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.625;
+$line-height-loose: 2;
+
+// Spacing (8px system)
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.5,    // 8px
+  2: $spacer,          // 16px
+  3: $spacer * 1.5,    // 24px
+  4: $spacer * 2,      // 32px
+  5: $spacer * 2.5,    // 40px
+  6: $spacer * 3,      // 48px
+  7: $spacer * 3.5,    // 56px
+  8: $spacer * 4,      // 64px
+  9: $spacer * 4.5,    // 72px
+  10: $spacer * 5,     // 80px
+  12: $spacer * 6,     // 96px
+  16: $spacer * 8,     // 128px
+  20: $spacer * 10,    // 160px
+  24: $spacer * 12,    // 192px
+);
+
+// Border radius
+$border-radius-sm: 0.25rem;
+$border-radius: 0.5rem;
+$border-radius-md: 0.75rem;
+$border-radius-lg: 1rem;
+$border-radius-xl: 1.5rem;
+$border-radius-2xl: 2rem;
+$border-radius-full: 50rem;
+
+// Shadows
+$box-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+$box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+$box-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+$box-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+$box-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+$box-shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+// Transitions
+$transition-fast: 150ms ease-in-out;
+$transition-base: 250ms ease-in-out;
+$transition-slow: 350ms ease-in-out;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// Container max widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+// Z-index scale
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1040;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;
+$zindex-toast: 1080;
