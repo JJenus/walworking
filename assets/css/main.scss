@@ -1,9 +1,9 @@
 // Modern CSS Variables and Base Styles
-@import 'variables';
-@import 'mixins';
+@use 'variables';
+@use 'mixins';
 
 // Bootstrap Icons (npm managed)
-@import 'bootstrap-icons/font/bootstrap-icons.css';
+@use 'bootstrap-icons/font/bootstrap-icons.css';
 
 // Custom theme styles
 :root {

@@ -24,10 +24,10 @@ export default defineNuxtPlugin(() => {
 
     // Theme toggle functionality
     const initializeThemeToggle = () => {
-      const getStoredTheme = () => localStorage.getItem('theme')
-      const setStoredTheme = (theme: string) => localStorage.setItem('theme', theme)
+      const getStoredTheme = (): string | null => localStorage.getItem('theme')
+      const setStoredTheme = (theme: string): void => localStorage.setItem('theme', theme)
       
-      const getPreferredTheme = () => {
+      const getPreferredTheme = (): string => {
         const storedTheme = getStoredTheme()
         if (storedTheme) {
           return storedTheme
@@ -35,7 +35,7 @@ export default defineNuxtPlugin(() => {
         return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
       }
 
-      const setTheme = (theme: string) => {
+      const setTheme = (theme: string): void => {
         if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
           document.documentElement.setAttribute('data-bs-theme', 'dark')
         } else {
@@ -43,7 +43,7 @@ export default defineNuxtPlugin(() => {
         }
       }
 
-      const showActiveTheme = (theme: string, focus = false) => {
+      const showActiveTheme = (theme: string, focus = false): void => {
         const themeSwitcher = document.querySelector('#bd-theme')
         if (!themeSwitcher) return
 
@@ -64,7 +64,8 @@ export default defineNuxtPlugin(() => {
           activeThemeIcon.innerHTML = svgOfActiveBtn.innerHTML
         }
 
-        const themeSwitcherLabel = `${themeSwitcherText?.textContent} (${btnToActive?.dataset.bsThemeText})`
+        // FIXED: Added proper type assertion for dataset
+        const themeSwitcherLabel = `${themeSwitcherText?.textContent} (${(btnToActive as HTMLElement)?.dataset.bsThemeText})`
         themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
 
         if (focus) {
@@ -115,9 +116,9 @@ export default defineNuxtPlugin(() => {
       }, false)
     })
 
-    // Smooth scroll for anchor links
+    // Smooth scroll for anchor links - FIXED: Added proper 'this' type annotation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', function (this: HTMLAnchorElement, e: Event) {
         e.preventDefault()
         const target = document.querySelector(this.getAttribute('href') || '')
         if (target) {

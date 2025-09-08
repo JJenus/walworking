@@ -802,7 +802,7 @@
 												class="d-flexi d-none align-items-center"
 											>
 												<img
-													src="/assets/images/avatar/avatar-7.jpg"
+													src="/assets/images/portfolio/portfolio-img-5.jpg"
 													alt="Avatar"
 													class="avatar avatar-lg rounded-circle"
 												/>

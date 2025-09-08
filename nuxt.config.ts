@@ -4,8 +4,8 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	modules: [
 		"nuxt-swiper", 
-		"@nuxt/image",
-		"@nuxtjs/seo",
+		"@nuxt/image", 
+		// "@nuxtjs/seo", // REMOVED - causing version conflicts
 		"@vueuse/nuxt"
 	],
 
@@ -13,8 +13,9 @@ export default defineNuxtConfig({
 
 	// Modern CSS configuration
 	css: [
-		'bootstrap/dist/css/bootstrap.min.css',
-		'~/assets/css/main.scss'
+		"bootstrap/dist/css/bootstrap.min.css",
+		"bootstrap-icons/font/bootstrap-icons.css",
+		"~/assets/css/main.scss",
 	],
 
 	// Image optimization
@@ -33,13 +34,9 @@ export default defineNuxtConfig({
 		densities: [1, 2],
 	},
 
-	// SEO Configuration
-	site: {
-		url: 'https://walworkingtechnologies.com',
-		name: 'WalWorking Technologies',
-		description: 'Expert fire protection, construction, and consulting services tailored to your needs.',
-		defaultLocale: 'en',
-	},
+	// REMOVED: site config (was part of @nuxtjs/seo)
+	// If you need SEO features, install individual packages instead:
+	// npm install @nuxtjs/sitemap @nuxtjs/robots
 
 	// Runtime configuration
 	runtimeConfig: {
@@ -58,7 +55,7 @@ export default defineNuxtConfig({
 	app: {
 		head: {
 			htmlAttrs: {
-				lang: 'en'
+				lang: "en",
 			},
 			meta: [
 				{
@@ -67,7 +64,7 @@ export default defineNuxtConfig({
 				},
 				{
 					name: "theme-color",
-					content: "#226b8d"
+					content: "#226b8d",
 				},
 				{
 					name: "twitter:card",
@@ -79,11 +76,13 @@ export default defineNuxtConfig({
 				},
 				{
 					name: "twitter:description",
-					content: "Expert fire protection, construction, and consulting services tailored to your needs.",
+					content:
+						"Expert fire protection, construction, and consulting services tailored to your needs.",
 				},
 				{
 					name: "twitter:image",
-					content: "https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
+					content:
+						"https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
 				},
 				{
 					property: "og:title",
@@ -91,11 +90,13 @@ export default defineNuxtConfig({
 				},
 				{
 					property: "og:description",
-					content: "Leading provider of fire safety, construction, and consulting solutions for businesses and individuals.",
+					content:
+						"Leading provider of fire safety, construction, and consulting solutions for businesses and individuals.",
 				},
 				{
 					property: "og:image",
-					content: "https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
+					content:
+						"https://walworkingtechnologies.vercel.app/assets/images/logo/logo-w.png",
 				},
 				{
 					property: "og:url",
@@ -104,6 +105,15 @@ export default defineNuxtConfig({
 				{
 					property: "og:type",
 					content: "website",
+				},
+				// ADDED: Basic SEO meta tags to replace @nuxtjs/seo functionality
+				{
+					name: "description",
+					content: "Expert fire protection, construction, and consulting services tailored to your needs.",
+				},
+				{
+					name: "keywords",
+					content: "fire protection, construction, consulting, safety solutions, WalWorking Technologies",
 				},
 			],
 			link: [
@@ -144,7 +154,7 @@ export default defineNuxtConfig({
 
 	// Build optimization
 	build: {
-		transpile: ['gsap']
+		transpile: ["gsap"],
 	},
 
 	// Vite configuration for modern bundling
@@ -152,30 +162,30 @@ export default defineNuxtConfig({
 		css: {
 			preprocessorOptions: {
 				scss: {
-					additionalData: '@use "~/assets/css/variables.scss" as *;'
-				}
-			}
+					additionalData: '@use "~/assets/css/variables.scss" as *;',
+				},
+			},
 		},
 		optimizeDeps: {
-			include: ['bootstrap']
-		}
+			include: ["bootstrap"],
+		},
 	},
 
 	// TypeScript configuration
 	typescript: {
 		strict: true,
-		typeCheck: true
+		typeCheck: true,
 	},
 
 	// Experimental features
 	experimental: {
 		payloadExtraction: false,
-		viewTransition: true
+		viewTransition: true,
 	},
 
 	// Nitro configuration for better performance
 	nitro: {
 		compressPublicAssets: true,
-		minify: true
-	}
+		minify: true,
+	},
 });
