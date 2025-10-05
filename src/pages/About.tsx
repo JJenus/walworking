@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { 
   Shield, 
   Users, 
@@ -8,146 +8,182 @@ import {
   Target,
   Eye,
   Heart,
-  Globe
+  Globe,
+  TrendingUp,
+  ShieldCheck,
+  Zap,
+  ArrowRight
 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const About: React.FC = () => {
-  const observerRef = useRef<IntersectionObserver>();
-
-  useEffect(() => {
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
+  const baseUrl = import.meta.env.VITE_BASE_URL || 'https://walworkingtechnologiesltd.com';
+  
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Wal Working Technologies Limited",
+    "description": "Leading fire protection company in Nigeria providing comprehensive fire safety solutions, equipment sales, installation, maintenance, training and consultancy services.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wal Working Technologies Limited",
+      "description": "Fire Protection & Safety Solutions Company in Nigeria",
+      "url": baseUrl,
+      "logo": `${baseUrl}/assets/images/logo/logo-w.png`,
+      "telephone": "+234-810-698-1539",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "15 Custom Street, Alakuko, Lagos/Abeokuta Expressway",
+        "addressLocality": "Lagos State",
+        "addressCountry": "Nigeria"
       },
-      { threshold: 0.1 }
-    );
-
-    const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
-    elements.forEach((el) => observerRef.current?.observe(el));
-
-    return () => observerRef.current?.disconnect();
-  }, []);
+      "serviceArea": "Nigeria",
+      "services": [
+        "Fire Protection",
+        "Safety Equipment Sales",
+        "Fire Training",
+        "Fire Consultancy",
+        "PPE Solutions",
+        "FM-200 Systems",
+        "CO2 Flooding Systems"
+      ]
+    }
+  };
 
   return (
-    <div className="pt-32 pb-16">
+    <div className="min-h-screen bg-bs-white">
+      <SEO
+        title="About Wal Working Technologies - Fire Protection Experts in Nigeria"
+        description="Learn about Wal Working Technologies Limited - Nigeria's leading fire protection company with 10+ years experience in fire safety equipment, training, and consultancy services."
+        canonicalUrl="/about"
+        ogImage={`${baseUrl}/assets/images/team/team1.png`}
+        schemaMarkup={aboutSchema}
+      />
+
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-warning-500">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <div className="fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              About Wal Working Technologies
-            </h1>
-            <p className="text-xl md:text-2xl text-primary-100 max-w-4xl mx-auto leading-relaxed">
-              A leading fire protection company providing sales, installation, maintenance, training, and consultancy 
-              for fire safety equipment and personal protective equipment (PPE) in Nigeria.
-            </p>
+      <section className="pt-32 pb-20 bg-gradient-to-br from-bs-purple via-bs-indigo to-bs-primary relative overflow-hidden">
+        <div className="absolute inset-0 bg-bs-black/20"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center text-bs-white">
+            <div className="animate-fade-in-up">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                About <span className="text-bs-warning">Wal Working</span> Technologies
+              </h1>
+              <p className="text-xl md:text-2xl text-bs-gray-200 max-w-4xl mx-auto leading-relaxed mb-8">
+                Leading Fire Protection & Safety Solutions Provider in Nigeria with 10+ Years of Excellence
+              </p>
+              <div className="flex flex-wrap justify-center gap-4 mt-8">
+                <div className="bg-bs-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-bs-white/20">
+                  <span className="text-bs-warning font-semibold">500+</span> Projects
+                </div>
+                <div className="bg-bs-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-bs-white/20">
+                  <span className="text-bs-warning font-semibold">10+</span> Years Experience
+                </div>
+                <div className="bg-bs-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-bs-white/20">
+                  <span className="text-bs-warning font-semibold">50+</span> Expert Team
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Company Overview */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-bs-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="slide-in-left">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Your Trusted Fire Safety Partner
-              </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Wal Working Technologies Limited is a fire protection company providing comprehensive solutions 
-                to clients in the oil and gas, manufacturing, power, ICT, and individual sectors across Nigeria.
-              </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our outstanding reputation for innovation, reliability, and service excellence comes from 
-                configuring modular systems focused on client requirements. We aim to establish mutually 
-                beneficial business relationships, ensuring safety for lives, properties, and critical assets 
-                to support business continuity, growth, and profitability.
-              </p>
-              
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">500+</div>
-                  <div className="text-gray-600">Projects Completed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">10+</div>
-                  <div className="text-gray-600">Years Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">50+</div>
-                  <div className="text-gray-600">Expert Team</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">24/7</div>
-                  <div className="text-gray-600">Support Available</div>
+            <div className="animate-slide-in-left">
+              <div className="bg-gradient-to-br from-bs-purple/5 to-bs-primary/5 p-8 rounded-2xl border border-bs-purple/20">
+                <h2 className="text-3xl md:text-4xl font-bold text-bs-gray-800 mb-6">
+                  Your Trusted Fire Safety <span className="text-bs-primary">Partner</span>
+                </h2>
+                <p className="text-lg text-bs-gray-700 mb-6 leading-relaxed">
+                  Wal Working Technologies Limited is a premier fire protection company delivering comprehensive 
+                  safety solutions to clients across Nigeria's oil and gas, manufacturing, power, ICT, and commercial sectors.
+                </p>
+                <p className="text-lg text-bs-gray-700 mb-8 leading-relaxed">
+                  Our reputation for <strong className="text-bs-primary">innovation, reliability, and service excellence</strong> stems from 
+                  our client-focused approach. We build lasting partnerships to ensure safety for lives, properties, 
+                  and critical assets while supporting business continuity and growth.
+                </p>
+                
+                <div className="grid grid-cols-2 gap-6 mt-8">
+                  <div className="text-center p-4 bg-bs-white rounded-lg shadow-sm border border-bs-gray-200">
+                    <div className="text-2xl font-bold text-bs-primary mb-2">24/7</div>
+                    <div className="text-bs-gray-600 text-sm">Emergency Support</div>
+                  </div>
+                  <div className="text-center p-4 bg-bs-white rounded-lg shadow-sm border border-bs-gray-200">
+                    <div className="text-2xl font-bold text-bs-primary mb-2">100%</div>
+                    <div className="text-bs-gray-600 text-sm">Safety Compliance</div>
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="slide-in-right">
-              <img
-                src="https://images.pexels.com/photos/6937000/pexels-photo-6937000.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                alt="Fire safety professionals at work"
-                className="rounded-xl shadow-2xl"
-              />
+            <div className="animate-slide-in-right">
+              <div className="relative">
+                <img
+                  src="/assets/images/team/team1.png"
+                  alt="Professional fire safety team at Wal Working Technologies"
+                  className="rounded-2xl shadow-2xl w-full h-auto"
+                  loading="lazy"
+                />
+                <div className="absolute -bottom-6 -left-6 bg-bs-primary text-bs-white p-6 rounded-2xl shadow-xl">
+                  <div className="text-3xl font-bold">10+</div>
+                  <div className="text-sm">Years Experience</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-bs-gray-100 to-bs-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Foundation
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-bs-gray-800 mb-4">
+              Our <span className="text-bs-primary">Foundation</span>
             </h2>
-            <p className="text-xl text-gray-600">
-              Built on strong principles that guide everything we do
+            <p className="text-xl text-bs-gray-600 max-w-2xl mx-auto">
+              Built on strong principles that guide our commitment to excellence and safety
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Mission */}
-            <div className="bg-white p-8 rounded-xl shadow-lg text-center fade-in">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Target className="w-8 h-8 text-primary-600" />
+            <div className="group bg-bs-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-bs-gray-200 hover:border-bs-primary/30 animate-fade-in-up">
+              <div className="bg-bs-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <Target className="w-8 h-8 text-bs-primary" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Our Mission</h3>
-              <p className="text-gray-600 leading-relaxed">
-                To be 100% committed to flawlessly executing our services with a relentless focus on safety, 
-                efficiency, rapid response, technical expertise, and a growth mindset. To provide a safe, 
-                rewarding, inclusive, and sustainable career platform for all employees while supporting 
-                the growth of manufacturing industries, oil and gas sectors, power sectors, and government parastatals.
+              <h3 className="text-xl font-bold text-bs-gray-800 mb-4 text-center">Our Mission</h3>
+              <p className="text-bs-gray-700 leading-relaxed text-center">
+                To deliver flawless fire protection services with relentless focus on safety, efficiency, 
+                and technical expertise while supporting sustainable career growth and industrial development.
               </p>
             </div>
 
             {/* Vision */}
-            <div className="bg-white p-8 rounded-xl shadow-lg text-center fade-in">
-              <div className="bg-info-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Eye className="w-8 h-8 text-info-600" />
+            <div className="group bg-bs-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-bs-gray-200 hover:border-bs-info/30 animate-fade-in-up" style={{animationDelay: '200ms'}}>
+              <div className="bg-bs-info/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <Eye className="w-8 h-8 text-bs-info" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Our Vision</h3>
-              <p className="text-gray-600 leading-relaxed">
-                To be the service partner of choice for all potential clients, renowned as a forward-thinking, 
-                progressive organization operating in the best interests of our clients and employees.
+              <h3 className="text-xl font-bold text-bs-gray-800 mb-4 text-center">Our Vision</h3>
+              <p className="text-bs-gray-700 leading-relaxed text-center">
+                To be Nigeria's preferred fire safety partner, recognized as a forward-thinking organization 
+                operating in the best interests of clients and employees alike.
               </p>
             </div>
 
             {/* Values */}
-            <div className="bg-white p-8 rounded-xl shadow-lg text-center fade-in">
-              <div className="bg-success-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Heart className="w-8 h-8 text-success-600" />
+            <div className="group bg-bs-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-bs-gray-200 hover:border-bs-success/30 animate-fade-in-up" style={{animationDelay: '400ms'}}>
+              <div className="bg-bs-success/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <Heart className="w-8 h-8 text-bs-success" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Our Values</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-bs-gray-800 mb-4 text-center">Our Values</h3>
+              <p className="text-bs-gray-700 leading-relaxed text-center">
                 Safety First, Excellence Always, Integrity in Action, Customer-Centric Approach, 
-                Innovation & Growth, Environmental Responsibility, and CASHES (Community Affairs, 
-                Safety, Health, Environment, and Security) commitment in all our operations.
+                Innovation & Growth, and Environmental Responsibility in all operations.
               </p>
             </div>
           </div>
@@ -155,242 +191,172 @@ const About: React.FC = () => {
       </section>
 
       {/* Core Competencies */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-bs-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              QHSE Objectives & CASHES Policies
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-bs-gray-800 mb-4">
+              QHSE Excellence & <span className="text-bs-primary">CASHES</span> Commitment
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our commitment to Quality, Health, Safety, Environment, and Security excellence
+            <p className="text-xl text-bs-gray-600 max-w-3xl mx-auto">
+              Our unwavering dedication to Quality, Health, Safety, Environment, and Security standards
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white p-8 rounded-xl shadow-lg fade-in">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">QHSE Objectives</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-600">Eliminate HSE incidents across our operations</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-600">Prevent pollution and environmental damage</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-600">Investigate and prevent recurrence of quality and HSE-related non-conformances</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-600">Set robust but achievable QHSE objectives with continuous improvement</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-600">Train and develop all our employees</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-600">Ensure compliance with all applicable local and international legislation</span>
-                </li>
-              </ul>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div className="animate-slide-in-left">
+              <div className="bg-gradient-to-br from-bs-primary/5 to-bs-white p-8 rounded-2xl border border-bs-primary/20">
+                <h3 className="text-2xl font-bold text-bs-gray-800 mb-6 flex items-center">
+                  <ShieldCheck className="w-8 h-8 text-bs-primary mr-3" />
+                  QHSE Objectives
+                </h3>
+                <ul className="space-y-4">
+                  {[
+                    "Eliminate HSE incidents across all operations",
+                    "Prevent pollution and environmental damage",
+                    "Investigate and prevent recurrence of quality issues",
+                    "Set robust but achievable QHSE objectives",
+                    "Continuous training and employee development",
+                    "Ensure compliance with all legislation"
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-bs-success mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-bs-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg fade-in">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">CASHES Policies</h3>
-              <p className="text-gray-600 mb-4">
-                CASHES stands for Community Affairs, Safety, Health, Environment, and Security. 
-                We carry out all business activities to ensure the safety, health, and protection of our clients and third parties.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-600">Developing practicable CASHES programs with top management commitment</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-600">Providing necessary CASHES training for safe task performance</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-600">Supplying protective equipment for accident prevention</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-600">Implementing meaningful safety monitoring measures</span>
-                </li>
-              </ul>
+            <div className="animate-slide-in-right">
+              <div className="bg-gradient-to-br from-bs-info/5 to-bs-white p-8 rounded-2xl border border-bs-info/20">
+                <h3 className="text-2xl font-bold text-bs-gray-800 mb-6 flex items-center">
+                  <Zap className="w-8 h-8 text-bs-info mr-3" />
+                  CASHES Policies
+                </h3>
+                <p className="text-bs-gray-700 mb-6">
+                  CASHES (Community Affairs, Safety, Health, Environment, Security) ensures comprehensive 
+                  protection for our clients, employees, and communities.
+                </p>
+                <ul className="space-y-4">
+                  {[
+                    "Developing practical CASHES programs with management commitment",
+                    "Providing essential safety training for all tasks",
+                    "Supplying protective equipment for accident prevention",
+                    "Implementing meaningful safety monitoring measures"
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-bs-success mr-3 mt-1 flex-shrink-0" />
+                      <span className="text-bs-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-6 bg-gray-50 rounded-xl fade-in">
-              <h4 className="font-semibold text-lg text-gray-900 mb-3">Engineering Excellence</h4>
-              <p className="text-gray-600">
-                Our success depends on brilliant engineers offering diverse projects, fascinating challenges, and global opportunities.
-              </p>
-            </div>
-
-            <div className="p-6 bg-gray-50 rounded-xl fade-in">
-              <h4 className="font-semibold text-lg text-gray-900 mb-3">Field Operations</h4>
-              <p className="text-gray-600">
-                We provide suitable field technicians for smooth operations with outstanding training and real advancement opportunities.
-              </p>
-            </div>
-
-            <div className="p-6 bg-gray-50 rounded-xl fade-in">
-              <h4 className="font-semibold text-lg text-gray-900 mb-3">Career Development</h4>
-              <p className="text-gray-600">
-                An attractive place for energetic individuals seeking rewarding opportunities in a fast-paced, agile environment.
-              </p>
-            </div>
-
-            <div className="p-6 bg-gray-50 rounded-xl fade-in">
-              <h4 className="font-semibold text-lg text-gray-900 mb-3">Safety Training</h4>
-              <p className="text-gray-600">
-                Comprehensive fire safety training programs for personnel at all organizational levels.
-              </p>
-            </div>
-
-            <div className="p-6 bg-gray-50 rounded-xl fade-in">
-              <h4 className="font-semibold text-lg text-gray-900 mb-3">Risk Assessment</h4>
-              <p className="text-gray-600">
-                Detailed fire risk assessments and safety audits to identify vulnerabilities and recommend solutions.
-              </p>
-            </div>
-
-            <div className="p-6 bg-gray-50 rounded-xl fade-in">
-              <h4 className="font-semibold text-lg text-gray-900 mb-3">Emergency Response</h4>
-              <p className="text-gray-600">
-                24/7 emergency response services with rapid deployment capabilities across Nigeria.
-              </p>
-            </div>
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { icon: TrendingUp, title: "Engineering Excellence", desc: "Brilliant engineers offering diverse projects and global opportunities" },
+              { icon: Users, title: "Field Operations", desc: "Skilled technicians with outstanding training and advancement opportunities" },
+              { icon: Award, title: "Career Development", desc: "Rewarding opportunities in a fast-paced, agile environment" },
+              { icon: Shield, title: "Safety Training", desc: "Comprehensive fire safety programs for all organizational levels" },
+              { icon: Eye, title: "Risk Assessment", desc: "Detailed safety audits to identify vulnerabilities and solutions" },
+              { icon: Clock, title: "Emergency Response", desc: "24/7 emergency services with rapid deployment across Nigeria" }
+            ].map((service, index) => (
+              <div 
+                key={index} 
+                className="bg-bs-gray-50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 border border-bs-gray-200 group hover:border-bs-primary/30 animate-fade-in-up"
+                style={{animationDelay: `${index * 100}ms`}}
+              >
+                <div className="bg-bs-white w-12 h-12 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <service.icon className="w-6 h-6 text-bs-primary" />
+                </div>
+                <h4 className="font-semibold text-lg text-bs-gray-800 mb-3">{service.title}</h4>
+                <p className="text-bs-gray-600 text-sm leading-relaxed">{service.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Industry Recognition */}
-      <section className="py-20 bg-gradient-to-r from-secondary-900 to-primary-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Certifications & Accreditations
+      {/* Certifications */}
+      <section className="py-20 bg-gradient-to-br from-bs-indigo to-bs-primary relative overflow-hidden">
+        <div className="absolute inset-0 bg-bs-black/20"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-bs-white mb-4">
+              Certifications & <span className="text-bs-warning">Accreditations</span>
             </h2>
-            <p className="text-xl text-secondary-300 max-w-3xl mx-auto">
-              Our commitment to excellence is validated by leading industry certifications and partnerships
+            <p className="text-xl text-bs-gray-200 max-w-3xl mx-auto">
+              Validated excellence through leading industry certifications and partnerships
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center fade-in">
-              <div className="bg-white bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                <Award className="w-10 h-10 text-white" />
+            {[
+              { icon: Award, title: "NFPA Certified", desc: "National Fire Protection Association standards compliance" },
+              { icon: CheckCircle, title: "ISO 9001:2015", desc: "Quality Management System certification" },
+              { icon: Shield, title: "OHSAS 18001", desc: "Occupational Health & Safety Management" },
+              { icon: Globe, title: "FMC Nigeria", desc: "Licensed fire protection contractor" }
+            ].map((cert, index) => (
+              <div 
+                key={index}
+                className="text-center animate-fade-in-up group"
+                style={{animationDelay: `${index * 200}ms`}}
+              >
+                <div className="bg-bs-white/10 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform border border-bs-white/20">
+                  <cert.icon className="w-10 h-10 text-bs-white" />
+                </div>
+                <h4 className="text-lg font-bold text-bs-white mb-2">{cert.title}</h4>
+                <p className="text-bs-gray-200 text-sm leading-relaxed">{cert.desc}</p>
               </div>
-              <h4 className="text-lg font-bold text-white mb-2">NFPA Certified</h4>
-              <p className="text-secondary-300 text-sm">
-                National Fire Protection Association certified for fire safety standards compliance
-              </p>
-            </div>
-
-            <div className="text-center fade-in">
-              <div className="bg-white bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                <CheckCircle className="w-10 h-10 text-white" />
-              </div>
-              <h4 className="text-lg font-bold text-white mb-2">ISO 9001:2015</h4>
-              <p className="text-secondary-300 text-sm">
-                Quality Management System certification ensuring consistent service delivery
-              </p>
-            </div>
-
-            <div className="text-center fade-in">
-              <div className="bg-white bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                <Shield className="w-10 h-10 text-white" />
-              </div>
-              <h4 className="text-lg font-bold text-white mb-2">OHSAS 18001</h4>
-              <p className="text-secondary-300 text-sm">
-                Occupational Health & Safety Management System certification
-              </p>
-            </div>
-
-            <div className="text-center fade-in">
-              <div className="bg-white bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                <Globe className="w-10 h-10 text-white" />
-              </div>
-              <h4 className="text-lg font-bold text-white mb-2">FMC Nigeria</h4>
-              <p className="text-secondary-300 text-sm">
-                Licensed fire protection contractor with Federal Ministry of Commerce
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-bs-gray-100 to-bs-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="slide-in-left">
-              <img
-                src="https://images.pexels.com/photos/1662770/pexels-photo-1662770.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                alt="Professional fire safety team"
-                className="rounded-xl shadow-2xl"
-              />
+            <div className="animate-slide-in-left">
+              <div className="relative">
+                <img
+                  src="/assets/images/team/construction-works.jpg"
+                  alt="Professional fire safety team working on installation"
+                  className="rounded-2xl shadow-2xl w-full h-auto"
+                  loading="lazy"
+                />
+                <div className="absolute -top-4 -right-4 bg-bs-warning text-bs-gray-800 p-4 rounded-2xl shadow-xl">
+                  <div className="text-sm font-semibold">Trusted Since</div>
+                  <div className="text-xl font-bold">2013</div>
+                </div>
+              </div>
             </div>
 
-            <div className="slide-in-right">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Why Choose WalWorking Technologies?
+            <div className="animate-slide-in-right">
+              <h2 className="text-3xl md:text-4xl font-bold text-bs-gray-800 mb-6">
+                Why Choose <span className="text-bs-primary">WalWorking</span>?
               </h2>
               
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-primary-100 p-2 rounded-lg flex-shrink-0">
-                    <CheckCircle className="w-6 h-6 text-primary-600" />
+                {[
+                  { icon: CheckCircle, color: "primary", title: "Proven Track Record", desc: "500+ successful projects across various industries in Nigeria" },
+                  { icon: Users, color: "info", title: "Expert Team", desc: "Certified fire protection engineers and safety specialists" },
+                  { icon: Clock, color: "success", title: "24/7 Support", desc: "Round-the-clock emergency response and technical support" },
+                  { icon: Award, color: "warning", title: "Quality Assurance", desc: "ISO certified processes ensuring highest standards" }
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start space-x-4 group">
+                    <div className={`bg-bs-${item.color}/10 p-3 rounded-xl flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                      <item.icon className={`w-6 h-6 text-bs-${item.color}`} />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-lg text-bs-gray-800 mb-2">{item.title}</h4>
+                      <p className="text-bs-gray-700 leading-relaxed">{item.desc}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-lg text-gray-900 mb-2">Proven Track Record</h4>
-                    <p className="text-gray-600">
-                      Over 500 successful projects completed across various industries in Nigeria
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-info-100 p-2 rounded-lg flex-shrink-0">
-                    <Users className="w-6 h-6 text-info-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg text-gray-900 mb-2">Expert Team</h4>
-                    <p className="text-gray-600">
-                      Certified fire protection engineers and safety specialists with extensive experience
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-success-100 p-2 rounded-lg flex-shrink-0">
-                    <Clock className="w-6 h-6 text-success-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg text-gray-900 mb-2">24/7 Support</h4>
-                    <p className="text-gray-600">
-                      Round-the-clock emergency response and technical support services
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-warning-100 p-2 rounded-lg flex-shrink-0">
-                    <Award className="w-6 h-6 text-warning-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg text-gray-900 mb-2">Quality Assurance</h4>
-                    <p className="text-gray-600">
-                      ISO certified processes ensuring highest standards in all our services
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -398,21 +364,31 @@ const About: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-warning-500">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white fade-in">
+      <section className="py-20 bg-gradient-to-r from-bs-primary to-bs-indigo relative overflow-hidden">
+        <div className="absolute inset-0 bg-bs-black/10"></div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-bs-white relative animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Partner with Us?
+            Ready to Enhance Your Fire Safety?
           </h2>
-          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Experience the WalWorking difference. Contact us today for a comprehensive fire safety consultation.
+          <p className="text-xl text-bs-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Partner with Nigeria's leading fire protection experts. Get a comprehensive safety consultation today.
           </p>
-          <a
-            href="/contact"
-            className="inline-flex items-center bg-white text-primary-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 font-medium text-lg group"
-          >
-            Start Your Project Today
-            <CheckCircle className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/contact"
+              className="inline-flex items-center bg-bs-white text-bs-primary px-8 py-4 rounded-xl hover:bg-bs-gray-100 transition-all duration-300 font-semibold text-lg group shadow-lg hover:shadow-xl"
+            >
+              Start Your Project
+              <CheckCircle className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
+            </a>
+            <a
+              href="/services"
+              className="inline-flex items-center border-2 border-bs-white text-bs-white px-8 py-4 rounded-xl hover:bg-bs-white hover:text-bs-primary transition-all duration-300 font-semibold text-lg group"
+            >
+              Our Services
+              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
         </div>
       </section>
     </div>

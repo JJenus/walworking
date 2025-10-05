@@ -16,6 +16,7 @@ import {
   Wrench,
   GraduationCap
 } from 'lucide-react';
+import fighterImg from "../assets/image/team/back-view-firefighters-trying-put-out-wildfire.jpg"
 
 const Home: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -63,7 +64,7 @@ const Home: React.FC = () => {
           ref={heroRef}
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(220, 38, 38, 0.4)), url('https://images.pexels.com/photos/4541168/pexels-photo-4541168.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(220, 38, 38, 0.4)), url(${fighterImg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
@@ -71,11 +72,11 @@ const Home: React.FC = () => {
         />
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        <div className="relative mt-8 z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
           <div className="mb-8 animate-fadeInUp">
             <div className="inline-flex items-center bg-primary-600 px-4 py-2 rounded-full mb-6">
               <Shield className="w-5 h-5 mr-2" />
-              <span className="text-sm font-medium">WAL WORKING TECHNOLOGIES</span>
+              <span className="text-sm font-medium">WALWORKING TECHNOLOGIES</span>
             </div>
           </div>
           
@@ -86,8 +87,8 @@ const Home: React.FC = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-secondary-200 mb-8 max-w-3xl mx-auto leading-relaxed animate-slideInRight">
-            Your trusted partner for comprehensive fire protection and PPE supply solutions in Nigeria. 
-            Serving oil & gas, manufacturing, power, ICT sectors with professional expertise and cutting-edge technology.
+            Nigeria's trusted partner for comprehensive fire protection and safety solutions. 
+            Protecting lives and property with professional expertise and cutting-edge technology.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp">
@@ -103,7 +104,7 @@ const Home: React.FC = () => {
               className="bg-white bg-opacity-20 text-white px-8 py-4 rounded-lg hover:bg-opacity-30 transition-all duration-300 font-medium text-lg flex items-center justify-center backdrop-blur-sm"
             >
               <Phone className="w-5 h-5 mr-2" />
-              Call Us: +234 810 698 1539
+              Emergency: +234 810 698 1539
             </a>
           </div>
         </div>
@@ -179,7 +180,7 @@ const Home: React.FC = () => {
               Quality Assurance & Control
             </h2>
             <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-              Our equipment and services meet the highest standards. We ensure everything we do is governed by our core values, delivering unparalleled service quality.
+              We ensure that everything we do is governed by our core values, and that the service we provide is second to none.
             </p>
           </div>
 
@@ -188,9 +189,9 @@ const Home: React.FC = () => {
               <div className="bg-danger-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Flame className="w-10 h-10 text-danger-600" />
               </div>
-              <h3 className="text-lg font-bold text-secondary-900 mb-4">Fire Protection Systems</h3>
+              <h3 className="text-lg font-bold text-secondary-900 mb-4">Fire Fighting Equipment</h3>
               <p className="text-secondary-600">
-                Comprehensive fire protection systems including FM-200, CO2 flooding, fire alarms, and extinguishers with full engineering support.
+                We provide comprehensive service for fire fighting equipment including engineering design, supply, installation and maintenance.
               </p>
             </div>
 
@@ -198,9 +199,9 @@ const Home: React.FC = () => {
               <div className="bg-warning-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <AlertTriangle className="w-10 h-10 text-warning-600" />
               </div>
-              <h3 className="text-lg font-bold text-secondary-900 mb-4">Fire Detection Systems</h3>
+              <h3 className="text-lg font-bold text-secondary-900 mb-4">Fire Detection System</h3>
               <p className="text-secondary-600">
-                Advanced fire alarm and detection systems with smoke detectors, heat detectors, and manual activation devices for comprehensive protection.
+                Our fire alarm system services include system design, supply, installation and maintenance.
               </p>
             </div>
 
@@ -208,9 +209,9 @@ const Home: React.FC = () => {
               <div className="bg-warning-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <HardHat className="w-10 h-10 text-warning-600" />
               </div>
-              <h3 className="text-lg font-bold text-secondary-900 mb-4">Quality PPE Supply</h3>
+              <h3 className="text-lg font-bold text-secondary-900 mb-4">Personal Safety Equipment</h3>
               <p className="text-secondary-600">
-                We prioritize quality, delivering reliable personal protective and safety equipment tailored to meet individual needs and satisfaction.
+                We supply top-quality Personal Protective Equipment designed to ensure safety and protection in various environments.
               </p>
             </div>
 
@@ -218,9 +219,9 @@ const Home: React.FC = () => {
               <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-primary-600" />
               </div>
-              <h3 className="text-lg font-bold text-secondary-900 mb-4">SAFE Operations</h3>
+              <h3 className="text-lg font-bold text-secondary-900 mb-4">Quality Assurance</h3>
               <p className="text-secondary-600">
-                Our integrated management system is based on ISO 9001:2008, ISO 14001:2004, and OHSAS 18001, incorporating IMO: ISM Code requirements.
+                We ensure top-tier Quality Assurance processes to maintain the highest standards in our products and services.
               </p>
             </div>
           </div>
@@ -271,13 +272,12 @@ const Home: React.FC = () => {
       <section className="py-20 bg-secondary-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in">
-            <p className="text-primary-600 font-semibold mb-4">OUR COMMITMENT</p>
+            <p className="text-primary-600 font-semibold mb-4">SAFETY IS PRIORITY</p>
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-900 mb-8">Our Mission</h2>
             <p className="text-xl text-secondary-600 max-w-4xl mx-auto leading-relaxed">
-              To be 100% committed to flawlessly executing our services with a relentless focus on safety, 
-              efficiency, rapid response, technical expertise, and a growth mindset. To provide a safe, 
-              rewarding, inclusive, and sustainable career platform for all employees while supporting 
-              the growth of manufacturing industries, oil and gas sectors, power sectors, and government parastatals.
+              Our Mission is to be 100% committed to developing and enhancing our services with 
+              relentless focus on safety, efficiency, swift response, technical expertise and 
+              growth mindset.
             </p>
           </div>
 

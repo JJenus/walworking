@@ -11,6 +11,7 @@ import {
   Building,
   MessageSquare
 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 interface ContactForm {
   firstName: string;
@@ -56,6 +57,40 @@ const Contact: React.FC = () => {
 
     return () => observerRef.current?.disconnect();
   }, []);
+
+  const baseUrl = import.meta.env.VITE_BASE_URL || 'https://walworkingtechnologiesltd.com';
+
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Wal Working Technologies - Fire Safety Experts in Nigeria",
+    "description": "Get professional fire protection solutions in Nigeria. Contact our safety experts for equipment sales, installation, training, and 24/7 emergency services.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Wal Working Technologies Limited",
+      "description": "Fire Protection & Safety Solutions Company in Nigeria",
+      "url": baseUrl,
+      "logo": `${baseUrl}/assets/images/logo/logo-w.png`,
+      "telephone": "+234-810-698-1539",
+      "email": "info@walworkingtechnologiesltd.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "15 Custom Street, Alakuko, Lagos/Abeokuta Expressway",
+        "addressLocality": "Lagos State",
+        "addressCountry": "Nigeria"
+      },
+      "areaServed": "Nigeria",
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 6.5244,
+          "longitude": 3.3792
+        },
+        "geoRadius": "1000000"
+      }
+    }
+  };
 
   const validateForm = (): boolean => {
     const newErrors: Partial<ContactForm> = {};
@@ -119,6 +154,13 @@ const Contact: React.FC = () => {
 
   return (
     <div className="pt-32 pb-16">
+      <SEO
+        title="Contact Wal Working Technologies - Fire Safety Experts in Nigeria"
+        description="Get professional fire protection solutions in Nigeria. Contact our safety experts for equipment sales, installation, training, and 24/7 emergency services."
+        canonicalUrl="/contact"
+        ogImage={`${baseUrl}/assets/images/contact/fire-safety-experts.jpg`}
+        schemaMarkup={contactSchema}
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-primary-600 to-warning-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">

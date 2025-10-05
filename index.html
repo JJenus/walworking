@@ -10,34 +10,32 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://walworkingtechnologiesltd.com/">
+    <meta property="og:url" content="<%= VITE_BASE_URL %>">
     <meta property="og:title" content="Wal Working Technologies Limited - Fire Protection & Safety Solutions">
     <meta property="og:description" content="Expert fire protection services in Nigeria. Sales, installation, maintenance, training and consultancy.">
+    <meta property="og:image" content="<%= VITE_BASE_URL %>/assets/images/logo/logo-w.png">
     
-    <!-- Schema.org markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Wal Working Technologies Limited",
-      "description": "Fire Protection & Safety Solutions Company in Nigeria",
-      "url": "https://walworkingtechnologiesltd.com",
-      "telephone": "+234-810-698-1539",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "15 Custom Street, Alakuko, Lagos/Abeokuta Expressway",
-        "addressLocality": "Lagos State",
-        "addressCountry": "Nigeria"
-      },
-      "serviceArea": "Nigeria",
-      "services": ["Fire Protection", "Safety Equipment Sales", "Fire Training", "Fire Consultancy", "PPE Solutions", "FM-200 Systems", "CO2 Flooding Systems"]
-    }
-    </script>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<%= VITE_BASE_URL %>">
+    <meta property="twitter:title" content="Wal Working Technologies Limited - Fire Protection & Safety Solutions">
+    <meta property="twitter:description" content="Expert fire protection services in Nigeria. Sales, installation, maintenance, training and consultancy.">
+    <meta property="twitter:image" content="<%= VITE_BASE_URL %>/assets/images/logo/logo-w.png">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/images/logo/logo-w.png" as="image">
     
-    <link rel="canonical" href="https://walworkingtechnologiesltd.com/">
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<%= VITE_BASE_URL %>">
 </head>
-<body>
+<body class="w-full">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
 </body>
