@@ -78,7 +78,7 @@ const Header: React.FC = () => {
 								aria-label="Emergency contact number"
 							>
 								<Phone className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-								Emergency: +234-810-698-1539
+								Contact: +234-810-698-1539
 							</a>
 							<a
 								href="mailto:info@walworkingtechnologiesltd.com"
@@ -88,7 +88,7 @@ const Header: React.FC = () => {
 								info@walworkingtechnologiesltd.com
 							</a>
 						</div>
-						<div className="text-xs font-medium bg-bs-primary-dark/30 px-3 py-1 rounded-full border border-bs-white/20">
+						<div className="text-xs hidden font-medium bg-bs-primary-dark/30 px-3 py-1 rounded-full border border-bs-white/20">
 							🚨 24/7 Emergency Response Available
 						</div>
 					</div>
