@@ -229,7 +229,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Company Stats */}
-      <section className="py-16 bg-gradient-to-r from-primary-600 to-warning-500">
+      <section className="py-16 bg-gradient-to-r from-primary-600 to-danger-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
             <div className="fade-in">

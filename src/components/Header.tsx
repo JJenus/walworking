@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import Logo from "./Logo";
+import { contactPhoneMain } from "../util/contact";
 
 const Header: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +50,7 @@ const Header: React.FC = () => {
 			};
 		} else {
 			return {
-				bgColor: "bg-bs-white shadow-lg",
+				bgColor: `bg-bs-white ${isScrolled && "shadow-lg"}`,
 				textColor: "text-bs-gray-700",
 				logoTextColor: "text-bs-gray-800",
 				subtitleColor: "text-bs-gray-600",
@@ -78,7 +79,7 @@ const Header: React.FC = () => {
 								aria-label="Emergency contact number"
 							>
 								<Phone className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-								Contact: +234-810-698-1539
+								Contact: {contactPhoneMain}
 							</a>
 							<a
 								href="mailto:info@walworkingtechnologiesltd.com"
@@ -97,7 +98,7 @@ const Header: React.FC = () => {
 
 			{/* Main Navigation */}
 			<div
-				className={`w-full transition-all duration-300 ${navStyles.bgColor} ${navStyles.borderColor} border-b`}
+				className={`w-full transition-all duration-300 ${navStyles.bgColor} ${navStyles.borderColor} border-0`}
 			>
 				<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="flex justify-between items-center h-16">

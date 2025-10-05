@@ -71,7 +71,7 @@ const About: React.FC = () => {
   };
 
   return (
-    <div className="pt-32 pb-16">
+    <div className="pt-16 min-h-screen">
       <SEO
         title="About Wal Working Technologies - Fire Safety Experts in Nigeria"
         description="Learn about Wal Working Technologies Limited - Nigeria's leading fire protection company with 10+ years experience in fire safety equipment, training, and consultancy services."
@@ -81,11 +81,11 @@ const About: React.FC = () => {
       />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-warning-500">
+      <section className="py-20 bg-gradient-to-r from-primary-600 to-danger-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <div className="fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              About <span className="text-warning-400">Wal Working</span> Technologies
+              About <span className="text-warning-400">WalWorking</span> Technologies
             </h1>
             <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto leading-relaxed">
               Leading Fire Protection & Safety Solutions Provider in Nigeria with 10+ Years of Excellence
@@ -281,7 +281,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-16 bg-gradient-to-r from-primary-600 to-warning-500">
+      <section className="py-16 bg-gradient-to-r from-primary-600 to-danger-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in">
             <h2 className="text-3xl font-bold text-white mb-4">
@@ -306,8 +306,8 @@ const About: React.FC = () => {
                 <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                   <cert.icon className="w-8 h-8 text-primary-600" />
                 </div>
-                <h4 className="text-lg font-bold text-gray-900 mb-4">{cert.title}</h4>
-                <p className="text-gray-600">{cert.desc}</p>
+                <h4 className="font-bold text-base sm:text-lg mb-2">{cert.title}</h4>
+                <p className="text-secondary-300 text-sm sm:text-base">{cert.desc}</p>
               </div>
             ))}
           </div>
@@ -363,7 +363,7 @@ const About: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary-600 to-warning-500">
+      <section className="py-16 bg-gradient-to-r from-primary-600 to-danger-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <div className="fade-in">
             <h2 className="text-3xl font-bold mb-6">

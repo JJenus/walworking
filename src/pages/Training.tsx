@@ -200,7 +200,7 @@ const Training: React.FC = () => {
   return (
     <div className="pt-32 pb-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-warning-500">
+      <section className="py-20 bg-gradient-to-r from-primary-600 to-danger-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <div className="fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
