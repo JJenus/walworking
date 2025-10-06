@@ -10,17 +10,17 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="%VITE_BASE_URL%">
+    <meta property="og:url" content="<%= VITE_BASE_URL %>">
     <meta property="og:title" content="Wal Working Technologies Limited - Fire Protection & Safety Solutions">
     <meta property="og:description" content="Expert fire protection services in Nigeria. Sales, installation, maintenance, training and consultancy.">
-    <meta property="og:image" content="%VITE_BASE_URL%/assets/images/logo/logo-w.png">
+    <meta property="og:image" content="<%= VITE_BASE_URL %>/assets/images/logo/logo-w.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="%VITE_BASE_URL%">
+    <meta property="twitter:url" content="<%= VITE_BASE_URL %>">
     <meta property="twitter:title" content="Wal Working Technologies Limited - Fire Protection & Safety Solutions">
     <meta property="twitter:description" content="Expert fire protection services in Nigeria. Sales, installation, maintenance, training and consultancy.">
-    <meta property="twitter:image" content="%VITE_BASE_URL%/assets/images/logo/logo-w.png">
+    <meta property="twitter:image" content="<%= VITE_BASE_URL %>/assets/images/logo/logo-w.png">
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/assets/images/logo/logo-w.png" as="image">
@@ -30,9 +30,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="%VITE_BASE_URL%">
+    <link rel="canonical" href="<%= VITE_BASE_URL %>">
 </head>
 <body class="w-full">
     <div id="root"></div>
