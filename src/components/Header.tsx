@@ -125,7 +125,7 @@ const Header: React.FC = () => {
 							))}
 							<Link
 								to="/contact"
-								className="ml-4 bg-gradient-to-r from-bs-primary to-bs-indigo text-bs-white px-6 py-2 rounded-lg hover:from-bs-indigo hover:to-bs-primary transition-all duration-200 font-medium shadow-lg hover:shadow-xl hover:scale-105"
+								className="ml-4 bg-primary-500 text-white px-4 py-3 rounded-lg hover:bg-primary-600 transition-all duration-200 font-medium text-lg transform hover:scale-105 mt-8 shadow-lg"
 							>
 								Get Quote
 							</Link>
@@ -163,9 +163,9 @@ const Header: React.FC = () => {
 										{item.name}
 									</Link>
 								))}
-								<Link
+								<Link 
 									to="/contact"
-									className="block w-full text-center bg-gradient-to-r from-bs-primary to-bs-indigo text-bs-white px-4 py-3 rounded-lg hover:from-bs-indigo hover:to-bs-primary transition-all duration-200 font-medium mt-4 shadow-lg"
+									className="block w-full bg-primary-500 text-white px-4 py-3 rounded-lg hover:bg-primary-600 transition-all duration-200 font-medium text-lg transform hover:scale-105 mt-8 shadow-lg"
 								>
 									Get Quote
 								</Link>
