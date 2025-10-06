@@ -43,11 +43,11 @@ const About: React.FC = () => {
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "About WalWorking Technologies Limited",
+    "name": "About Walworking Technologies Limited",
     "description": "Leading fire protection company in Nigeria providing comprehensive fire safety solutions, equipment sales, installation, maintenance, training and consultancy services.",
     "publisher": {
       "@type": "Organization",
-      "name": "WalWorking Technologies Limited",
+      "name": "Walworking Technologies Limited",
       "description": "Fire Protection & Safety Solutions Company in Nigeria",
       "url": baseUrl,
       "logo": `${baseUrl}/assets/images/logo/logo-w.png`,
@@ -74,8 +74,8 @@ const About: React.FC = () => {
   return (
     <div className="pt-16 min-h-screen">
       <SEO
-        title="About WalWorking Technologies - Fire Safety Experts in Nigeria"
-        description="Learn about WalWorking Technologies Limited - Nigeria's leading fire protection company with 10+ years experience in fire safety equipment, training, and consultancy services."
+        title="About Walworking Technologies - Fire Safety Experts in Nigeria"
+        description="Learn about Walworking Technologies Limited - Nigeria's leading fire protection company with 10+ years experience in fire safety equipment, training, and consultancy services."
         canonicalUrl="/about"
         ogImage={`${baseUrl}/assets/images/team/team1.png`}
         schemaMarkup={aboutSchema}
@@ -86,7 +86,7 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <div className="fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              About <span className="text-warning-400">WalWorking</span> Technologies
+              About <span className="text-warning-400">Walworking</span> Technologies
             </h1>
             <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto leading-relaxed">
               Leading Fire Protection & Safety Solutions Provider in Nigeria with 10+ Years of Excellence
@@ -105,7 +105,7 @@ const About: React.FC = () => {
                   Your Trusted Fire Safety <span className="text-primary-600">Partner</span>
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  WalWorking Technologies Limited is a premier fire protection company delivering comprehensive 
+                  Walworking Technologies Limited is a premier fire protection company delivering comprehensive 
                   safety solutions to clients across Nigeria's oil and gas, manufacturing, power, ICT, and commercial sectors.
                 </p>
                 <p className="text-gray-600 mb-8">
@@ -130,7 +130,7 @@ const About: React.FC = () => {
               <div className="relative">
                 <img
                   src={team1Img}
-                  alt="Professional fire safety team at WalWorking Technologies"
+                  alt="Professional fire safety team at Walworking Technologies"
                   className="rounded-xl shadow-lg w-full h-auto"
                   loading="lazy"
                 />
@@ -337,7 +337,7 @@ const About: React.FC = () => {
             <div className="slide-in-right">
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Why Choose <span className="text-primary-600">WalWorking</span>?
+                  Why Choose <span className="text-primary-600">Walworking</span>?
                 </h2>
                 <div className="space-y-6">
                   {[

@@ -104,7 +104,7 @@ const Header: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <span className={`font-bold text-lg ${navStyles.logoTextColor} group-hover:text-bs-primary transition-colors duration-200`}>
-                  WalWorking Technologies
+                  Walworking Technologies
                 </span>
                 <span className={`text-xs ${navStyles.subtitleColor}`}>
                   Fire Protection & Safety Solutions
@@ -189,22 +189,22 @@ export default Header;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WalWorking Technologies Limited - Fire Protection & Safety Solutions Nigeria</title>
+    <title>Walworking Technologies Limited - Fire Protection & Safety Solutions Nigeria</title>
     <meta name="description" content="Leading fire protection company in Nigeria specializing in fire safety equipment sales, installation, maintenance, training and consultancy services. Expert PPE solutions for industrial and commercial facilities.">
     <meta name="keywords" content="fire protection Nigeria, fire safety equipment, PPE, fire extinguisher, safety training, fire consultancy, industrial safety, FM-200, CO2 flooding, fire alarm systems">
-    <meta name="author" content="Wal Working Technologies Limited">
+    <meta name="author" content="Walworking Technologies Limited">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="<%= VITE_BASE_URL %>">
-    <meta property="og:title" content="Wal Working Technologies Limited - Fire Protection & Safety Solutions">
+    <meta property="og:title" content="Walworking Technologies Limited - Fire Protection & Safety Solutions">
     <meta property="og:description" content="Expert fire protection services in Nigeria. Sales, installation, maintenance, training and consultancy.">
     <meta property="og:image" content="<%= VITE_BASE_URL %>/assets/images/logo/logo-w.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="<%= VITE_BASE_URL %>">
-    <meta property="twitter:title" content="Wal Working Technologies Limited - Fire Protection & Safety Solutions">
+    <meta property="twitter:title" content="Walworking Technologies Limited - Fire Protection & Safety Solutions">
     <meta property="twitter:description" content="Expert fire protection services in Nigeria. Sales, installation, maintenance, training and consultancy.">
     <meta property="twitter:image" content="<%= VITE_BASE_URL %>/assets/images/logo/logo-w.png">
 
@@ -339,7 +339,7 @@ const Footer: React.FC = () => {
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h3 className="font-bold text-lg">WalWorking Technologies</h3>
+                <h3 className="font-bold text-lg">Walworking Technologies</h3>
                 <p className="text-secondary-400 text-sm">Fire Protection & Safety</p>
               </div>
             </div>
@@ -485,7 +485,7 @@ const Footer: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="md:flex md:items-center md:justify-between">
             <div className="text-secondary-400 text-sm">
-              <p>&copy; {currentYear} Wal Working Technologies Limited. All rights reserved.</p>
+              <p>&copy; {currentYear} Walworking Technologies Limited. All rights reserved.</p>
               <p className="mt-1">Licensed Fire Protection & PPE Supply Company</p>
             </div>
             <div className="mt-4 md:mt-0">

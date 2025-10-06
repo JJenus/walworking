@@ -163,7 +163,7 @@ const Services: React.FC = () => {
     "serviceType": "Fire Protection Services",
     "provider": {
       "@type": "Organization",
-      "name": "Wal Working Technologies Limited",
+      "name": "Walworking Technologies Limited",
       "url": baseUrl,
       "logo": `${baseUrl}/assets/images/logo/logo-w.png`,
       "telephone": "+234-810-698-1539",
@@ -208,7 +208,7 @@ const Services: React.FC = () => {
   return (
     <div className="pt-16">
       <SEO
-        title="Fire Protection Services | Wal Working Technologies - Nigeria"
+        title="Fire Protection Services | Walworking Technologies - Nigeria"
         description="Comprehensive fire protection services in Nigeria, including equipment sales, system installation, maintenance, safety training, consultancy, and 24/7 emergency response."
         canonicalUrl="/services"
         ogImage={`${baseUrl}/assets/images/services/fire-safety-services.jpg`}
@@ -315,7 +315,7 @@ const Services: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-16 items-center">
             <div className="slide-in-left">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
-                Why Choose WalWorking for Your Fire Safety Needs?
+                Why Choose Walworking for Your Fire Safety Needs?
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
                 With over a decade of experience in Nigeria’s fire protection industry, we combine 

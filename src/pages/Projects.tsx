@@ -91,7 +91,7 @@ const Projects: React.FC = () => {
 				"24/7 monitoring established",
 			],
 			clientTestimonial:
-				"WalWorking Technologies delivered exceptional service for our Eko Atlantic project. Their expertise in large-scale developments is unmatched.",
+				"Walworking Technologies delivered exceptional service for our Eko Atlantic project. Their expertise in large-scale developments is unmatched.",
 			clientName: "Eko Atlantic Development Company",
 		},
 		{
@@ -130,7 +130,7 @@ const Projects: React.FC = () => {
 				"Emergency response capability",
 			],
 			clientTestimonial:
-				"The fire safety systems installed by WalWorking have exceeded our expectations. Their industrial expertise is truly world-class.",
+				"The fire safety systems installed by Walworking have exceeded our expectations. Their industrial expertise is truly world-class.",
 			clientName: "Dangote Industries Limited",
 		},
 		{
@@ -169,7 +169,7 @@ const Projects: React.FC = () => {
 				"Trained hospital staff",
 			],
 			clientTestimonial:
-				"WalWorking understood our unique healthcare requirements and delivered solutions that protect both patients and equipment.",
+				"Walworking understood our unique healthcare requirements and delivered solutions that protect both patients and equipment.",
 			clientName: "Lagos University Teaching Hospital",
 		},
 		{
@@ -208,7 +208,7 @@ const Projects: React.FC = () => {
 				"Emergency preparedness",
 			],
 			clientTestimonial:
-				"The fire safety upgrades have significantly improved our campus safety. WalWorking's educational expertise is evident.",
+				"The fire safety upgrades have significantly improved our campus safety. Walworking's educational expertise is evident.",
 			clientName: "University of Lagos",
 		},
 		{
@@ -247,7 +247,7 @@ const Projects: React.FC = () => {
 				"Expert operations team",
 			],
 			clientTestimonial:
-				"WalWorking's expertise in oil and gas fire protection has helped us maintain our excellent safety record.",
+				"Walworking's expertise in oil and gas fire protection has helped us maintain our excellent safety record.",
 			clientName: "Shell Petroleum Development Company",
 		},
 		{
@@ -286,7 +286,7 @@ const Projects: React.FC = () => {
 				"Trained staff network",
 			],
 			clientTestimonial:
-				"WalWorking successfully implemented consistent fire safety standards across all our locations in Nigeria.",
+				"Walworking successfully implemented consistent fire safety standards across all our locations in Nigeria.",
 			clientName: "Shoprite Holdings",
 		},
 	];
@@ -299,13 +299,13 @@ const Projects: React.FC = () => {
       const projectSchema = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        name: "Fire Protection Projects by WalWorking Technologies",
+        name: "Fire Protection Projects by Walworking Technologies",
         description:
           "Explore our portfolio of fire protection projects across commercial, industrial, healthcare, education, and oil & gas sectors in Nigeria.",
         url: `${baseUrl}/projects`,
         publisher: {
           "@type": "Organization",
-          name: "WalWorking Technologies Limited",
+          name: "Walworking Technologies Limited",
           url: baseUrl,
           logo: `${baseUrl}/assets/images/logo/logo-w.png`,
           telephone: "+234-810-698-1539",
@@ -460,7 +460,7 @@ const Projects: React.FC = () => {
 	return (
 		<>
 			<SEO
-				title="Fire Protection Projects | WalWorking Technologies - Nigeria"
+				title="Fire Protection Projects | Walworking Technologies - Nigeria"
 				description="Explore our portfolio of fire protection projects across commercial, industrial, healthcare, education, and oil & gas sectors in Nigeria."
 				canonicalUrl="/projects"
 				ogImage={`${baseUrl}/assets/images/projects/fire-safety-projects.jpg`}

@@ -236,13 +236,13 @@ const Training: React.FC = () => {
 	const trainingSchema = {
 		"@context": "https://schema.org",
 		"@type": "CollectionPage",
-		name: "Fire Safety Training Programs by WalWorking Technologies",
+		name: "Fire Safety Training Programs by Walworking Technologies",
 		description:
 			"Explore our comprehensive fire safety training programs designed for all industries in Nigeria, including fire warden, risk assessment, and emergency response training.",
 		url: `${baseUrl}/training`,
 		publisher: {
 			"@type": "Organization",
-			name: "WalWorking Technologies Limited",
+			name: "Walworking Technologies Limited",
 			url: baseUrl,
 			logo: `${baseUrl}/assets/images/logo/logo-w.png`,
 			telephone: "+234-810-698-1539",
@@ -260,7 +260,7 @@ const Training: React.FC = () => {
 			description: program.description,
 			provider: {
 				"@type": "Organization",
-				name: "WalWorking Technologies Limited",
+				name: "Walworking Technologies Limited",
 				sameAs: baseUrl,
 			},
 			offers: {
@@ -300,7 +300,7 @@ const Training: React.FC = () => {
 	return (
 		<>
 			<SEO
-				title="Fire Safety Training & Certification | WalWorking Technologies - Nigeria"
+				title="Fire Safety Training & Certification | Walworking Technologies - Nigeria"
 				description="Explore our comprehensive fire safety training programs designed for all industries in Nigeria, including fire warden, risk assessment, and emergency response training."
 				canonicalUrl="/training"
 				ogImage={`${baseUrl}/assets/images/training/fire-safety-training.jpg`}
@@ -547,7 +547,7 @@ const Training: React.FC = () => {
 									Career Opportunities
 								</h2>
 								<p className="text-xl text-gray-600 mb-8">
-									Wal Working Technologies Limited is an
+									Walworking Technologies Limited is an
 									attractive place for energetic individuals
 									seeking rewarding opportunities. As a market
 									leader with unparalleled capabilities, we

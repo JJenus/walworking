@@ -312,7 +312,7 @@ const Home: React.FC = () => {
                 ))}
               </div>
               <p className="text-secondary-600 mb-6 italic">
-                "WalWorking Technologies provided exceptional fire safety solutions for our manufacturing facility. Their team's professionalism and expertise exceeded our expectations."
+                "Walworking Technologies provided exceptional fire safety solutions for our manufacturing facility. Their team's professionalism and expertise exceeded our expectations."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-secondary-300 rounded-full mr-4"></div>
@@ -348,7 +348,7 @@ const Home: React.FC = () => {
                 ))}
               </div>
               <p className="text-secondary-600 mb-6 italic">
-                "Professional training programs and top-quality PPE supplies. WalWorking has been our trusted partner for safety solutions."
+                "Professional training programs and top-quality PPE supplies. Walworking has been our trusted partner for safety solutions."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-secondary-300 rounded-full mr-4"></div>

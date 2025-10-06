@@ -30,7 +30,7 @@ const SEO: React.FC<SEOProps> = ({
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content="fire protection Nigeria, fire safety equipment, PPE, fire extinguisher, safety training, fire consultancy, industrial safety, FM-200, CO2 flooding, fire alarm systems" />
-      <meta name="author" content="Wal Working Technologies Limited" />
+      <meta name="author" content="Walworking Technologies Limited" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={fullCanonicalUrl} />
 
@@ -40,7 +40,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={fullOgImage} />
-      <meta property="og:site_name" content="Wal Working Technologies Limited" />
+      <meta property="og:site_name" content="Walworking Technologies Limited" />
       <meta property="og:locale" content="en_NG" />
 
       {/* Twitter Card Meta Tags */}

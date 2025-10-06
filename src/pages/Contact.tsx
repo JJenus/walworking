@@ -19,6 +19,8 @@ import {
 	contactPhoneMain,
 	contactPhoneSecondary,
 } from "../util/contact";
+import ContactForm from "../components/ContactForm";
+
 
 interface ContactForm {
 	firstName: string;
@@ -76,12 +78,12 @@ const Contact: React.FC = () => {
 	const contactSchema = {
 		"@context": "https://schema.org",
 		"@type": "ContactPage",
-		name: "Contact Wal Working Technologies - Fire Safety Experts in Nigeria",
+		name: "Contact Walworking Technologies - Fire Safety Experts in Nigeria",
 		description:
 			"Get professional fire protection solutions in Nigeria. Contact our safety experts for equipment sales, installation, training, and 24/7 emergency services.",
 		mainEntity: {
 			"@type": "Organization",
-			name: "Wal Working Technologies Limited",
+			name: "Walworking Technologies Limited",
 			description:
 				"Fire Protection & Safety Solutions Company in Nigeria",
 			url: baseUrl,
@@ -179,7 +181,7 @@ const Contact: React.FC = () => {
 	return (
 		<div className="pt-16">
 			<SEO
-				title="Contact Wal Working Technologies - Fire Safety Experts in Nigeria"
+				title="Contact Walworking Technologies - Fire Safety Experts in Nigeria"
 				description="Get professional fire protection solutions in Nigeria. Contact our safety experts for equipment sales, installation, training, and 24/7 emergency services."
 				canonicalUrl="/contact"
 				ogImage={`${baseUrl}/assets/images/contact/fire-safety-experts.jpg`}
@@ -284,293 +286,7 @@ const Contact: React.FC = () => {
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 						{/* Contact Form */}
 						<div className="slide-in-left">
-							<div className="bg-white p-8 rounded-xl shadow-lg">
-								<h2 className="text-2xl font-bold text-gray-900 mb-6">
-									Get a Free Consultation
-								</h2>
-								<p className="text-gray-600 mb-8">
-									Fill out the form below and our fire safety
-									experts will get back to you within 24
-									hours.
-								</p>
-
-								{submitStatus === "success" && (
-									<div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6 flex items-center">
-										<CheckCircle className="w-5 h-5 text-green-600 mr-3" />
-										<p className="text-green-700">
-											Thank you! Your message has been
-											sent successfully. We'll contact you
-											soon.
-										</p>
-									</div>
-								)}
-
-								{submitStatus === "error" && (
-									<div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6 flex items-center">
-										<AlertCircle className="w-5 h-5 text-red-600 mr-3" />
-										<p className="text-red-700">
-											Sorry, there was an error sending
-											your message. Please try again.
-										</p>
-									</div>
-								)}
-
-								<form
-									onSubmit={handleSubmit}
-									className="space-y-6"
-								>
-									<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-										<div>
-											<label
-												htmlFor="firstName"
-												className="block text-sm font-medium text-gray-700 mb-2"
-											>
-												First Name *
-											</label>
-											<div className="relative">
-												<User className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
-												<input
-													type="text"
-													id="firstName"
-													name="firstName"
-													value={formData.firstName}
-													onChange={handleInputChange}
-													className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors ${
-														errors.firstName
-															? "border-danger-500"
-															: "border-gray-300"
-													}`}
-													placeholder="Enter your first name"
-												/>
-											</div>
-											{errors.firstName && (
-												<p className="mt-1 text-sm text-danger-600">
-													{errors.firstName}
-												</p>
-											)}
-										</div>
-
-										<div>
-											<label
-												htmlFor="lastName"
-												className="block text-sm font-medium text-gray-700 mb-2"
-											>
-												Last Name *
-											</label>
-											<div className="relative">
-												<User className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
-												<input
-													type="text"
-													id="lastName"
-													name="lastName"
-													value={formData.lastName}
-													onChange={handleInputChange}
-													className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors ${
-														errors.lastName
-															? "border-danger-500"
-															: "border-gray-300"
-													}`}
-													placeholder="Enter your last name"
-												/>
-											</div>
-											{errors.lastName && (
-												<p className="mt-1 text-sm text-danger-600">
-													{errors.lastName}
-												</p>
-											)}
-										</div>
-									</div>
-
-									<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-										<div>
-											<label
-												htmlFor="email"
-												className="block text-sm font-medium text-gray-700 mb-2"
-											>
-												Email Address *
-											</label>
-											<div className="relative">
-												<Mail className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
-												<input
-													type="email"
-													id="email"
-													name="email"
-													value={formData.email}
-													onChange={handleInputChange}
-													className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors ${
-														errors.email
-															? "border-danger-500"
-															: "border-gray-300"
-													}`}
-													placeholder="your.email@company.com"
-												/>
-											</div>
-											{errors.email && (
-												<p className="mt-1 text-sm text-danger-600">
-													{errors.email}
-												</p>
-											)}
-										</div>
-
-										<div>
-											<label
-												htmlFor="phone"
-												className="block text-sm font-medium text-gray-700 mb-2"
-											>
-												Phone Number *
-											</label>
-											<div className="relative">
-												<Phone className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
-												<input
-													type="tel"
-													id="phone"
-													name="phone"
-													value={formData.phone}
-													onChange={handleInputChange}
-													className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors ${
-														errors.phone
-															? "border-danger-500"
-															: "border-gray-300"
-													}`}
-													placeholder="+234 XXX XXX XXXX"
-												/>
-											</div>
-											{errors.phone && (
-												<p className="mt-1 text-sm text-danger-600">
-													{errors.phone}
-												</p>
-											)}
-										</div>
-									</div>
-
-									<div>
-										<label
-											htmlFor="company"
-											className="block text-sm font-medium text-gray-700 mb-2"
-										>
-											Company Name
-										</label>
-										<div className="relative">
-											<Building className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
-											<input
-												type="text"
-												id="company"
-												name="company"
-												value={formData.company}
-												onChange={handleInputChange}
-												className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-												placeholder="Your company name"
-											/>
-										</div>
-									</div>
-
-									<div>
-										<label
-											htmlFor="service"
-											className="block text-sm font-medium text-gray-700 mb-2"
-										>
-											Service Required *
-										</label>
-										<select
-											id="service"
-											name="service"
-											value={formData.service}
-											onChange={handleInputChange}
-											className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors ${
-												errors.service
-													? "border-danger-500"
-													: "border-gray-300"
-											}`}
-										>
-											<option value="">
-												Select a service
-											</option>
-											<option value="fire-equipment-sales">
-												Fire Equipment Sales
-											</option>
-											<option value="system-installation">
-												System Installation
-											</option>
-											<option value="maintenance-services">
-												Maintenance Services
-											</option>
-											<option value="safety-training">
-												Safety Training
-											</option>
-											<option value="fire-consultancy">
-												Fire Consultancy
-											</option>
-											<option value="ppe-solutions">
-												PPE Solutions
-											</option>
-											<option value="emergency-response">
-												Emergency Response
-											</option>
-											<option value="risk-assessment">
-												Risk Assessment
-											</option>
-											<option value="other">Other</option>
-										</select>
-										{errors.service && (
-											<p className="mt-1 text-sm text-danger-600">
-												{errors.service}
-											</p>
-										)}
-									</div>
-
-									<div>
-										<label
-											htmlFor="message"
-											className="block text-sm font-medium text-gray-700 mb-2"
-										>
-											Message *
-										</label>
-										<div className="relative">
-											<MessageSquare className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
-											<textarea
-												id="message"
-												name="message"
-												rows={5}
-												value={formData.message}
-												onChange={handleInputChange}
-												className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-vertical ${
-													errors.message
-														? "border-danger-500"
-														: "border-gray-300"
-												}`}
-												placeholder="Please describe your fire safety requirements, facility details, or any specific questions you have..."
-											/>
-										</div>
-										{errors.message && (
-											<p className="mt-1 text-sm text-danger-600">
-												{errors.message}
-											</p>
-										)}
-									</div>
-
-									<button
-										type="submit"
-										disabled={isSubmitting}
-										className={`w-full py-4 px-6 rounded-lg font-medium text-lg flex items-center justify-center transition-all duration-300 ${
-											isSubmitting
-												? "bg-gray-400 cursor-not-allowed"
-												: "bg-primary-600 hover:bg-primary-700 transform hover:scale-[1.02]"
-										} text-white`}
-									>
-										{isSubmitting ? (
-											<>
-												<div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-3"></div>
-												Sending Message...
-											</>
-										) : (
-											<>
-												Send Message
-												<Send className="w-5 h-5 ml-2" />
-											</>
-										)}
-									</button>
-								</form>
-							</div>
+							<ContactForm />
 						</div>
 
 						{/* Map and Additional Info */}
@@ -579,7 +295,7 @@ const Contact: React.FC = () => {
 							{/* Embedded Google Map */}
 							<div className="bg-white rounded-xl shadow-lg overflow-hidden">
 								<iframe
-									title="Wal Working Technologies Location"
+									title="Walworking Technologies Location"
 									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.9045102872948!2d3.282000115803901!3d6.679056410912863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9456cd52c0d7%3A0xa9dd6fcdbf8301b!2s15%20Custom%20Street%2C%20Alakuko%2C%20Lagos%2FAbeokuta%20Expressway!5e0!3m2!1sen!2sng!4v1696511891217!5m2!1sen!2sng"
 									width="100%"
 									height="320"

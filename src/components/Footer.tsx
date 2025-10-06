@@ -224,7 +224,7 @@ const Footer: React.FC = () => {
 					<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0">
 						<div className="text-secondary-400 text-sm">
 							<p>
-								&copy; {currentYear} Wal Working Technologies
+								&copy; {currentYear} Walworking Technologies
 								Limited. All rights reserved.
 							</p>
 							<p className="mt-1">

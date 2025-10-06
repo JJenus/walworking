@@ -213,12 +213,12 @@ const Products: React.FC = () => {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "ProductCatalog",
-    "name": "Fire Safety Products - Wal Working Technologies",
+    "name": "Fire Safety Products - Walworking Technologies",
     "description": "Explore our range of fire safety products including fire extinguishers, suppression systems, detection systems, PPE, and emergency equipment for industrial and commercial use in Nigeria.",
     "url": `${baseUrl}/products`,
     "publisher": {
       "@type": "Organization",
-      "name": "Wal Working Technologies Limited",
+      "name": "Walworking Technologies Limited",
       "url": baseUrl,
       "logo": `${baseUrl}/assets/images/logo/logo-w.png`,
       "telephone": "+234-810-698-1539",
@@ -272,7 +272,7 @@ const Products: React.FC = () => {
   return (
     <div className="pt-16 font-sans">
       <SEO
-        title="Fire Safety Products | WalWorking Technologies - Nigeria"
+        title="Fire Safety Products | Walworking Technologies - Nigeria"
         description="Discover premium fire safety products including fire extinguishers, suppression systems, detection systems, PPE, and emergency equipment for industrial and commercial use in Nigeria."
         canonicalUrl="/products"
         ogImage={`${baseUrl}/assets/images/products/fire-safety-equipment.jpg`}
