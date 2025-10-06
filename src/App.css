@@ -1,164 +1,163 @@
 /* Parallax and custom animations */
 .parallax-container {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 1px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 1px;
 }
 
 .parallax-element {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .parallax-back {
-  transform: translateZ(-1px) scale(2);
+	transform: translateZ(-1px) scale(2);
 }
 
 .parallax-base {
-  transform: translateZ(0);
+	transform: translateZ(0);
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+	width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+	background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--bs-primary);
-  border-radius: 3px;
+	background: var(--bs-primary);
+	border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6f31cc;
+	background: #6f31cc;
 }
 
 /* Smooth scroll behavior */
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 /* Enhanced focus styles for accessibility */
 button:focus,
 input:focus,
 textarea:focus,
-select:focus,
-a:focus {
-  outline: 2px solid var(--bs-primary);
-  outline-offset: 2px;
+select:focus {
+	outline: 2px solid var(--bs-primary);
+	outline-offset: 2px;
 }
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
-  .bg-gradient-to-r {
-    background: #000;
-  }
-  
-  .text-white {
-    color: #fff !important;
-  }
-  
-  .text-secondary-500 {
-    color: #000 !important;
-  }
+	.bg-gradient-to-r {
+		background: #000;
+	}
+
+	.text-white {
+		color: #fff !important;
+	}
+
+	.text-secondary-500 {
+		color: #000 !important;
+	}
 }
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-  
-  .parallax-back {
-    transform: none;
-  }
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+
+	.parallax-back {
+		transform: none;
+	}
 }
 
 /* Custom animations */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 @keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 @keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 .animate-fadeInUp {
-  animation: fadeInUp 0.6s ease-out forwards;
+	animation: fadeInUp 0.6s ease-out forwards;
 }
 
 .animate-slideInLeft {
-  animation: slideInLeft 0.6s ease-out forwards;
+	animation: slideInLeft 0.6s ease-out forwards;
 }
 
 .animate-slideInRight {
-  animation: slideInRight 0.6s ease-out forwards;
+	animation: slideInRight 0.6s ease-out forwards;
 }
 
 /* Intersection Observer animations */
 .fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease-out;
+	opacity: 0;
+	transform: translateY(30px);
+	transition: all 0.6s ease-out;
 }
 
 .fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .slide-in-left {
-  opacity: 0;
-  transform: translateX(-30px);
-  transition: all 0.6s ease-out;
+	opacity: 0;
+	transform: translateX(-30px);
+	transition: all 0.6s ease-out;
 }
 
 .slide-in-left.visible {
-  opacity: 1;
-  transform: translateX(0);
+	opacity: 1;
+	transform: translateX(0);
 }
 
 .slide-in-right {
-  opacity: 0;
-  transform: translateX(30px);
-  transition: all 0.6s ease-out;
+	opacity: 0;
+	transform: translateX(30px);
+	transition: all 0.6s ease-out;
 }
 
 .slide-in-right.visible {
-  opacity: 1;
-  transform: translateX(0);
+	opacity: 1;
+	transform: translateX(0);
 }

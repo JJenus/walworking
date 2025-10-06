@@ -15,6 +15,9 @@ import {
   Award
 } from 'lucide-react';
 import SEO from '../components/SEO';
+import teamImg from '../assets/image/team/team1.jpg';
+import { contactPhoneMain } from '../util/contact';
+
 
 const Services: React.FC = () => {
   const observerRef = useRef<IntersectionObserver>();
@@ -203,7 +206,7 @@ const Services: React.FC = () => {
   };
 
   return (
-    <div className="pt-16 pb-16 min-h-screen">
+    <div className="pt-16">
       <SEO
         title="Fire Protection Services | Wal Working Technologies - Nigeria"
         description="Comprehensive fire protection services in Nigeria, including equipment sales, system installation, maintenance, safety training, consultancy, and 24/7 emergency response."
@@ -213,7 +216,7 @@ const Services: React.FC = () => {
       />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-primary-600 to-danger-500">
+      <section className="py-16 md:py-20 bg-gradient-to-r from-blue-600 to-red-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <div className="fade-in">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 tracking-tight">
@@ -341,10 +344,10 @@ const Services: React.FC = () => {
             
             <div className="slide-in-right">
               <picture>
-                <source srcSet="https://images.pexels.com/photos/4541326/pexels-photo-4541326.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" media="(min-width: 768px)" />
+                <source srcSet={teamImg} media="(min-width: 768px)" />
                 <img
-                  src="https://images.pexels.com/photos/4541326/pexels-photo-4541326.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
-                  srcSet="https://images.pexels.com/photos/4541326/pexels-photo-4541326.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop 400w, https://images.pexels.com/photos/4541326/pexels-photo-4541326.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop 800w"
+                  src={teamImg}
+                  srcSet={`${teamImg} 400w, ${teamImg} 800w`}
                   sizes="(max-width: 767px) 400px, 800px"
                   alt="Fire safety professional inspecting equipment in Nigeria"
                   className="rounded-xl shadow-2xl w-full h-auto"
@@ -412,12 +415,12 @@ const Services: React.FC = () => {
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
             </Link>
             <a
-              href="tel:+2341234567890"
+              href={`tel:${contactPhoneMain}`}
               className="bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-white hover:text-primary-900 focus:bg-white focus:text-primary-900 transition-all duration-300 font-medium text-sm sm:text-lg flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-white"
               aria-label="Call for fire safety services"
             >
               <Phone className="w-5 h-5 mr-2" aria-hidden="true" />
-              Call Now: +234 123 456 7890
+              Call Now: {contactPhoneMain}
             </a>
           </div>
         </div>

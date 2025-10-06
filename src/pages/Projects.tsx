@@ -468,7 +468,7 @@ const Projects: React.FC = () => {
 			/>
 			<div className="pt-16">
 				{/* Hero Section */}
-				<section className="py-20 bg-gradient-to-r from-primary-600 to-danger-500">
+				<section className="py-20 bg-gradient-to-r from-blue-600 to-red-500">
 					<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
 						<div className="fade-in">
 							<h1 className="text-4xl md:text-5xl font-bold mb-6">

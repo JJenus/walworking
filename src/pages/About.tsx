@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import certImg from "../assets/image/company/certificate-of-incorporation.png"
+import team1Img from "../assets/image/team/team1.jpg"
 
 const About: React.FC = () => {
   const baseUrl = import.meta.env.VITE_BASE_URL || 'https://walworkingtechnologiesltd.com';
@@ -42,11 +43,11 @@ const About: React.FC = () => {
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "About Wal Working Technologies Limited",
+    "name": "About WalWorking Technologies Limited",
     "description": "Leading fire protection company in Nigeria providing comprehensive fire safety solutions, equipment sales, installation, maintenance, training and consultancy services.",
     "publisher": {
       "@type": "Organization",
-      "name": "Wal Working Technologies Limited",
+      "name": "WalWorking Technologies Limited",
       "description": "Fire Protection & Safety Solutions Company in Nigeria",
       "url": baseUrl,
       "logo": `${baseUrl}/assets/images/logo/logo-w.png`,
@@ -73,15 +74,15 @@ const About: React.FC = () => {
   return (
     <div className="pt-16 min-h-screen">
       <SEO
-        title="About Wal Working Technologies - Fire Safety Experts in Nigeria"
-        description="Learn about Wal Working Technologies Limited - Nigeria's leading fire protection company with 10+ years experience in fire safety equipment, training, and consultancy services."
+        title="About WalWorking Technologies - Fire Safety Experts in Nigeria"
+        description="Learn about WalWorking Technologies Limited - Nigeria's leading fire protection company with 10+ years experience in fire safety equipment, training, and consultancy services."
         canonicalUrl="/about"
         ogImage={`${baseUrl}/assets/images/team/team1.png`}
         schemaMarkup={aboutSchema}
       />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-danger-500">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-red-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <div className="fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -104,7 +105,7 @@ const About: React.FC = () => {
                   Your Trusted Fire Safety <span className="text-primary-600">Partner</span>
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Wal Working Technologies Limited is a premier fire protection company delivering comprehensive 
+                  WalWorking Technologies Limited is a premier fire protection company delivering comprehensive 
                   safety solutions to clients across Nigeria's oil and gas, manufacturing, power, ICT, and commercial sectors.
                 </p>
                 <p className="text-gray-600 mb-8">
@@ -128,8 +129,8 @@ const About: React.FC = () => {
             <div className="slide-in-right">
               <div className="relative">
                 <img
-                  src="/assets/images/team/team1.png"
-                  alt="Professional fire safety team at Wal Working Technologies"
+                  src={team1Img}
+                  alt="Professional fire safety team at WalWorking Technologies"
                   className="rounded-xl shadow-lg w-full h-auto"
                   loading="lazy"
                 />
@@ -281,11 +282,11 @@ const About: React.FC = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-16 bg-gradient-to-r from-primary-600 to-danger-500">
+      <section className="py-16 bg-gradient-to-r from-secondary-900 to-primary-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 fade-in">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Certifications & <span className="text-warning-400">Accreditations</span>
+              Certifications & <span className="text-warning-400">Accreditation</span>
             </h2>
             <p className="text-xl text-primary-100">
               Validated excellence through leading industry certifications and partnerships
@@ -306,8 +307,8 @@ const About: React.FC = () => {
                 <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                   <cert.icon className="w-8 h-8 text-primary-600" />
                 </div>
-                <h4 className="font-bold text-base sm:text-lg mb-2">{cert.title}</h4>
-                <p className="text-secondary-300 text-sm sm:text-base">{cert.desc}</p>
+                <h4 className="font-bold text-white sm:text-lg mb-2">{cert.title}</h4>
+                <p className="text-white text-sm sm:text-base">{cert.desc}</p>
               </div>
             ))}
           </div>
@@ -363,7 +364,7 @@ const About: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary-600 to-danger-500">
+      <section className="py-16 bg-gradient-to-r from-secondary-900 to-primary-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <div className="fade-in">
             <h2 className="text-3xl font-bold mb-6">

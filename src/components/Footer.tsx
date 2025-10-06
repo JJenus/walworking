@@ -5,7 +5,6 @@ import {
 	Phone,
 	Mail,
 	Clock,
-	Shield,
 	Facebook,
 	Twitter,
 	Linkedin,

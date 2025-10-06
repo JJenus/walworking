@@ -18,6 +18,8 @@ import {
 	Phone,
 } from "lucide-react";
 import SEO from "../components/SEO";
+import fireExtinguisherFull from "../assets/image/products/fire-extinguisher-full.png";
+import { contactPhoneMain } from "../util/contact";
 
 const Training: React.FC = () => {
 	const observerRef = useRef<IntersectionObserver>();
@@ -306,7 +308,7 @@ const Training: React.FC = () => {
 			/>
 			<div className="pt-16">
 				{/* Hero Section */}
-				<section className="py-20 bg-gradient-to-r from-primary-600 to-danger-500">
+				<section className="py-20 bg-gradient-to-r from-blue-600 to-red-500">
 					<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
 						<div className="fade-in">
 							<h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -645,7 +647,7 @@ const Training: React.FC = () => {
 									</div>
 
 									<a
-										href="tel:+2348106981539"
+										href={`tel:${contactPhoneMain}`}
 										className="inline-flex items-center bg-white text-info-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors font-medium"
 									>
 										<Phone className="w-5 h-5 mr-2" />
@@ -762,7 +764,7 @@ const Training: React.FC = () => {
 						<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 							<div className="slide-in-left">
 								<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-									State-of-the-Art Training Facilities
+									State of the Art Training Facilities
 								</h2>
 								<p className="text-lg text-gray-600 mb-8 leading-relaxed">
 									Our modern training centers across Nigeria
@@ -825,7 +827,7 @@ const Training: React.FC = () => {
 
 							<div className="slide-in-right">
 								<img
-									src="https://images.pexels.com/photos/4543015/pexels-photo-4543015.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+									src={fireExtinguisherFull}
 									alt="Fire safety training in progress"
 									className="rounded-xl shadow-2xl"
 								/>
@@ -854,7 +856,7 @@ const Training: React.FC = () => {
 								<GraduationCap className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform" />
 							</Link>
 							<a
-								href="tel:+2341234567890"
+								href={`tel:${contactPhoneMain}`}
 								className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-primary-900 transition-all duration-300 font-medium text-lg flex items-center justify-center"
 							>
 								<Phone className="w-5 h-5 mr-2" />

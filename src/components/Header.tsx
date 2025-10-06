@@ -42,11 +42,10 @@ const Header: React.FC = () => {
 		if (isHomePage && !isScrolled) {
 			return {
 				bgColor: "bg-transparent",
-				textColor: "text-bs-white",
-				logoTextColor: "text-bs-white",
-				subtitleColor: "text-bs-gray-200",
-				menuButtonColor: "text-bs-white",
-				borderColor: "border-transparent",
+				textColor: "text-white",
+				logoTextColor: "text-white",
+				subtitleColor: "text-gray-200",
+				menuButtonColor: "text-white",
 			};
 		} else {
 			return {
@@ -55,7 +54,6 @@ const Header: React.FC = () => {
 				logoTextColor: "text-bs-gray-800",
 				subtitleColor: "text-bs-gray-600",
 				menuButtonColor: "text-bs-gray-800",
-				borderColor: "border-bs-gray-200",
 			};
 		}
 	};
@@ -98,7 +96,7 @@ const Header: React.FC = () => {
 
 			{/* Main Navigation */}
 			<div
-				className={`w-full transition-all duration-300 ${navStyles.bgColor} ${navStyles.borderColor} border-0`}
+				className={`w-full transition-all duration-300 ${navStyles.bgColor} border-0`}
 			>
 				<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="flex justify-between items-center h-16">
@@ -116,20 +114,20 @@ const Header: React.FC = () => {
 									to={item.href}
 									className={`px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg ${
 										location.pathname === item.href
-											? "text-bs-primary bg-bs-primary/10 border border-bs-primary/20"
+											? "text-bs-primary bg-bs-primary/10 border border-bs-primary text-bold"
 											: `${navStyles.textColor} hover:text-bs-primary hover:bg-bs-gray-100`
 									}`}
 								>
 									{item.name}
 								</Link>
 							))}
-							<Link
-								to="/contact"
-								className="ml-4 bg-primary-500 text-white px-4 py-3 rounded-lg hover:bg-primary-600 transition-all duration-200 font-medium text-lg transform hover:scale-105 mt-8 shadow-lg"
-							>
-								Get Quote
-							</Link>
 						</div>
+						<Link
+							to="/contact"
+							className="hidden lg:flex bg-primary-500 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors duration-200 font-medium transform hover:scale-105 shadow-lg"
+						>
+							Get Quote
+						</Link>
 
 						{/* Mobile menu button */}
 						<button
@@ -163,7 +161,7 @@ const Header: React.FC = () => {
 										{item.name}
 									</Link>
 								))}
-								<Link 
+								<Link
 									to="/contact"
 									className="block w-full bg-primary-500 text-white px-4 py-3 rounded-lg hover:bg-primary-600 transition-all duration-200 font-medium text-lg transform hover:scale-105 mt-8 shadow-lg"
 								>

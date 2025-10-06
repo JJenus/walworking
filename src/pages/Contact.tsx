@@ -177,7 +177,7 @@ const Contact: React.FC = () => {
 	};
 
 	return (
-		<div className="pt-16 md:pt-32">
+		<div className="pt-16">
 			<SEO
 				title="Contact Wal Working Technologies - Fire Safety Experts in Nigeria"
 				description="Get professional fire protection solutions in Nigeria. Contact our safety experts for equipment sales, installation, training, and 24/7 emergency services."
@@ -186,7 +186,7 @@ const Contact: React.FC = () => {
 				schemaMarkup={contactSchema}
 			/>
 			{/* Hero Section */}
-			<section className="py-20 bg-gradient-to-r from-primary-600 to-danger-500">
+			<section className="py-20 bg-gradient-to-r from-blue-600 to-red-500">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
 					<div className="fade-in">
 						<h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -576,18 +576,18 @@ const Contact: React.FC = () => {
 						{/* Map and Additional Info */}
 						<div className="slide-in-right space-y-8">
 							{/* Map Placeholder */}
+							{/* Embedded Google Map */}
 							<div className="bg-white rounded-xl shadow-lg overflow-hidden">
-								<div className="h-80 bg-gray-200 flex items-center justify-center">
-									<div className="text-center text-gray-500">
-										<MapPin className="w-12 h-12 mx-auto mb-4" />
-										<p className="text-lg font-medium">
-											Interactive Map
-										</p>
-										<p className="text-sm">
-											{companyAddress}
-										</p>
-									</div>
-								</div>
+								<iframe
+									title="Wal Working Technologies Location"
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.9045102872948!2d3.282000115803901!3d6.679056410912863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9456cd52c0d7%3A0xa9dd6fcdbf8301b!2s15%20Custom%20Street%2C%20Alakuko%2C%20Lagos%2FAbeokuta%20Expressway!5e0!3m2!1sen!2sng!4v1696511891217!5m2!1sen!2sng"
+									width="100%"
+									height="320"
+									style={{ border: 0 }}
+									allowFullScreen
+									loading="lazy"
+									referrerPolicy="no-referrer-when-downgrade"
+								></iframe>
 							</div>
 
 							{/* Emergency Contact */}
