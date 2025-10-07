@@ -12,6 +12,7 @@ import {
 	MessageSquare,
 } from "lucide-react";
 import SEO from "../components/SEO";
+import fighterImg from "../assets/image/team/back-view-firefighters-trying-put-out-wildfire.jpg";
 import {
 	companyAddress,
 	contactEmailEmergency,
@@ -183,8 +184,10 @@ const Contact: React.FC = () => {
 			<SEO
 				title="Contact Walworking Technologies - Fire Safety Experts in Nigeria"
 				description="Get professional fire protection solutions in Nigeria. Contact our safety experts for equipment sales, installation, training, and 24/7 emergency services."
-				canonicalUrl="/contact"
-				ogImage={`${baseUrl}/assets/images/contact/fire-safety-experts.jpg`}
+				canonicalUrl={`${baseUrl}/contact`}
+				ogImage={`${baseUrl}${fighterImg}`}
+				ogType="website"
+				twitterCard="summary_large_image"
 				schemaMarkup={contactSchema}
 			/>
 			{/* Hero Section */}

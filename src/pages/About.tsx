@@ -76,8 +76,10 @@ const About: React.FC = () => {
       <SEO
         title="About Walworking Technologies - Fire Safety Experts in Nigeria"
         description="Learn about Walworking Technologies Limited - Nigeria's leading fire protection company with 10+ years experience in fire safety equipment, training, and consultancy services."
-        canonicalUrl="/about"
-        ogImage={`${baseUrl}/assets/images/team/team1.png`}
+        canonicalUrl={`${baseUrl}/about`}
+        ogImage={`${baseUrl}${team1Img}`}
+        ogType="website"
+        twitterCard="summary_large_image"
         schemaMarkup={aboutSchema}
       />
 

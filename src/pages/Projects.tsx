@@ -15,6 +15,7 @@ import {
 	Eye,
 } from "lucide-react";
 import SEO from "../components/SEO";
+import fighterImg from "../assets/image/team/back-view-firefighters-trying-put-out-wildfire.jpg";
 
 const Projects: React.FC = () => {
 	const [activeFilter, setActiveFilter] = useState("all");
@@ -462,8 +463,10 @@ const Projects: React.FC = () => {
 			<SEO
 				title="Fire Protection Projects | Walworking Technologies - Nigeria"
 				description="Explore our portfolio of fire protection projects across commercial, industrial, healthcare, education, and oil & gas sectors in Nigeria."
-				canonicalUrl="/projects"
-				ogImage={`${baseUrl}/assets/images/projects/fire-safety-projects.jpg`}
+				canonicalUrl={`${baseUrl}/projects`}
+				ogImage={`${baseUrl}${fighterImg}`}
+				ogType="website"
+				twitterCard="summary_large_image"
 				schemaMarkup={projectSchema}
 			/>
 			<div className="pt-16">

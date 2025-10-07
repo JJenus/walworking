@@ -302,8 +302,10 @@ const Training: React.FC = () => {
 			<SEO
 				title="Fire Safety Training & Certification | Walworking Technologies - Nigeria"
 				description="Explore our comprehensive fire safety training programs designed for all industries in Nigeria, including fire warden, risk assessment, and emergency response training."
-				canonicalUrl="/training"
-				ogImage={`${baseUrl}/assets/images/training/fire-safety-training.jpg`}
+				canonicalUrl={`${baseUrl}/training`}
+				ogImage={`${baseUrl}${fireExtinguisherFull}`}
+				ogType="website"
+				twitterCard="summary_large_image"
 				schemaMarkup={trainingSchema}
 			/>
 			<div className="pt-16">

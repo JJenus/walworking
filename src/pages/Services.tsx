@@ -210,8 +210,10 @@ const Services: React.FC = () => {
       <SEO
         title="Fire Protection Services | Walworking Technologies - Nigeria"
         description="Comprehensive fire protection services in Nigeria, including equipment sales, system installation, maintenance, safety training, consultancy, and 24/7 emergency response."
-        canonicalUrl="/services"
-        ogImage={`${baseUrl}/assets/images/services/fire-safety-services.jpg`}
+        canonicalUrl={`${baseUrl}/services`}
+        ogImage={`${baseUrl}${teamImg}`}
+        ogType="website"
+        twitterCard="summary_large_image"
         schemaMarkup={serviceSchema}
       />
 

@@ -15,6 +15,7 @@ import {
   Phone
 } from 'lucide-react';
 import SEO from '../components/SEO';
+import fighterImg from '../assets/image/team/back-view-firefighters-trying-put-out-wildfire.jpg';
 
 // Import product images from assets
 import fireExtinguisherFull from '../assets/image/products/fire-extinguisher-zoomed.png';
@@ -274,8 +275,10 @@ const Products: React.FC = () => {
       <SEO
         title="Fire Safety Products | Walworking Technologies - Nigeria"
         description="Discover premium fire safety products including fire extinguishers, suppression systems, detection systems, PPE, and emergency equipment for industrial and commercial use in Nigeria."
-        canonicalUrl="/products"
-        ogImage={`${baseUrl}/assets/images/products/fire-safety-equipment.jpg`}
+        canonicalUrl={`${baseUrl}/products`}
+        ogImage={`${baseUrl}${fighterImg}`}
+        ogType="website"
+        twitterCard="summary_large_image"
         schemaMarkup={productSchema}
       />
 
