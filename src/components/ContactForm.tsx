@@ -14,6 +14,9 @@ const ContactForm: React.FC = () => {
 		fetch(`https://formsubmit.co/${contactGmail}`, {
 			method: "POST",
 			body: formData,
+			headers: {
+				Accept: "application/json",
+			},
 		})
 			.then((res) => {
 				if (res.ok) {
