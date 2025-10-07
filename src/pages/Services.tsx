@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import teamImg from '../assets/image/team/team1.jpg';
-import { contactPhoneMain } from '../util/contact';
+import { companyAddress, contactPhoneMain } from '../util/contact';
 
 
 const Services: React.FC = () => {
@@ -165,11 +165,11 @@ const Services: React.FC = () => {
       "@type": "Organization",
       "name": "Walworking Technologies Limited",
       "url": baseUrl,
-      "logo": `${baseUrl}/assets/images/logo/logo-w.png`,
-      "telephone": "+234-810-698-1539",
+      "logo": `${baseUrl}/assets/images/logo/logo.png`,
+      "telephone": contactPhoneMain,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "15 Custom Street, Alakuko, Lagos/Abeokuta Expressway",
+        "streetAddress": companyAddress,
         "addressLocality": "Lagos State",
         "addressCountry": "Nigeria"
       }

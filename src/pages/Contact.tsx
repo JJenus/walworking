@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
 			address: {
 				"@type": "PostalAddress",
 				streetAddress:
-					"15 Custom Street, Alakuko, Lagos/Abeokuta Expressway",
+					companyAddress,
 				addressLocality: "Lagos State",
 				addressCountry: "Nigeria",
 			},

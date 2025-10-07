@@ -17,6 +17,7 @@ import {
 import SEO from '../components/SEO';
 import certImg from "../assets/image/company/certificate-of-incorporation.png"
 import team1Img from "../assets/image/team/team1.jpg"
+import { companyAddress, contactPhoneMain } from '../util/contact';
 
 const About: React.FC = () => {
   const baseUrl = import.meta.env.VITE_BASE_URL || 'https://walworkingtechnologiesltd.com';
@@ -51,10 +52,10 @@ const About: React.FC = () => {
       "description": "Fire Protection & Safety Solutions Company in Nigeria",
       "url": baseUrl,
       "logo": `${baseUrl}/assets/images/logo/logo-w.png`,
-      "telephone": "+234-810-698-1539",
+      "telephone": contactPhoneMain,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "15 Custom Street, Alakuko, Lagos/Abeokuta Expressway",
+        "streetAddress": companyAddress,
         "addressLocality": "Lagos State",
         "addressCountry": "Nigeria"
       },

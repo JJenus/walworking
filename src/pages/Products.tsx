@@ -28,7 +28,7 @@ import indoorSprinkler from '../assets/image/products/indoor-water-spinkler.png'
 import fireCoverall from '../assets/image/products/fire-resistant-coverall.png';
 import breathingApparatus from '../assets/image/products/selcontained-breathing-aparatus.png';
 import exitSign from '../assets/image/products/emergency-exit-sign.png';
-import { contactPhoneMain } from '../util/contact';
+import { companyAddress, contactPhoneMain } from '../util/contact';
 
 const Products: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -222,10 +222,10 @@ const Products: React.FC = () => {
       "name": "Walworking Technologies Limited",
       "url": baseUrl,
       "logo": `${baseUrl}/assets/images/logo/logo-w.png`,
-      "telephone": "+234-810-698-1539",
+      "telephone": contactPhoneMain,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "15 Custom Street, Alakuko, Lagos/Abeokuta Expressway",
+        "streetAddress": companyAddress,
         "addressLocality": "Lagos State",
         "addressCountry": "Nigeria"
       }
@@ -276,7 +276,7 @@ const Products: React.FC = () => {
         title="Fire Safety Products | Walworking Technologies - Nigeria"
         description="Discover premium fire safety products including fire extinguishers, suppression systems, detection systems, PPE, and emergency equipment for industrial and commercial use in Nigeria."
         canonicalUrl={`${baseUrl}/products`}
-        ogImage={`${baseUrl}${fighterImg}`}
+        ogImage={`${baseUrl}${fireExtinguisherFull}`}
         ogType="website"
         twitterCard="summary_large_image"
         schemaMarkup={productSchema}

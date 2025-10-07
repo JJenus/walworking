@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import SEO from "../components/SEO";
 import fighterImg from "../assets/image/team/back-view-firefighters-trying-put-out-wildfire.jpg";
+import { companyAddress, contactPhoneMain } from "../util/contact";
 
 const Projects: React.FC = () => {
 	const [activeFilter, setActiveFilter] = useState("all");
@@ -297,53 +298,52 @@ const Projects: React.FC = () => {
 			? projects
 			: projects.filter((project) => project.category === activeFilter);
 
-      const projectSchema = {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        name: "Fire Protection Projects by Walworking Technologies",
-        description:
-          "Explore our portfolio of fire protection projects across commercial, industrial, healthcare, education, and oil & gas sectors in Nigeria.",
-        url: `${baseUrl}/projects`,
-        publisher: {
-          "@type": "Organization",
-          name: "Walworking Technologies Limited",
-          url: baseUrl,
-          logo: `${baseUrl}/assets/images/logo/logo-w.png`,
-          telephone: "+234-810-698-1539",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress:
-              "15 Custom Street, Alakuko, Lagos/Abeokuta Expressway",
-            addressLocality: "Lagos State",
-            addressCountry: "Nigeria",
-          },
-        },
-        hasPart: filteredProjects.map((project) => ({
-          "@type": "Project",
-          name: project.title,
-          description: project.description,
-          location: project.location,
-          startDate: project.completionDate,
-          image: project.image,
-        })),
-        breadcrumbList: {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: baseUrl,
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Projects",
-              item: `${baseUrl}/projects`,
-            },
-          ],
-        },
-      };
+	const projectSchema = {
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		name: "Fire Protection Projects by Walworking Technologies",
+		description:
+			"Explore our portfolio of fire protection projects across commercial, industrial, healthcare, education, and oil & gas sectors in Nigeria.",
+		url: `${baseUrl}/projects`,
+		publisher: {
+			"@type": "Organization",
+			name: "Walworking Technologies Limited",
+			url: baseUrl,
+			logo: `${baseUrl}/assets/images/logo/logo-w.png`,
+			telephone: contactPhoneMain,
+			address: {
+				"@type": "PostalAddress",
+				streetAddress: companyAddress,
+				addressLocality: "Lagos State",
+				addressCountry: "Nigeria",
+			},
+		},
+		hasPart: filteredProjects.map((project) => ({
+			"@type": "Project",
+			name: project.title,
+			description: project.description,
+			location: project.location,
+			startDate: project.completionDate,
+			image: project.image,
+		})),
+		breadcrumbList: {
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "Home",
+					item: baseUrl,
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: "Projects",
+					item: `${baseUrl}/projects`,
+				},
+			],
+		},
+	};
 
 	const ProjectModal = ({ project }: { project: (typeof projects)[0] }) => (
 		<div

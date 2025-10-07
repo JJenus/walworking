@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import SEO from "../components/SEO";
 import fireExtinguisherFull from "../assets/image/products/fire-extinguisher-full.png";
-import { contactPhoneMain } from "../util/contact";
+import { companyAddress, contactPhoneMain } from "../util/contact";
 
 const Training: React.FC = () => {
 	const observerRef = useRef<IntersectionObserver>();
@@ -245,11 +245,10 @@ const Training: React.FC = () => {
 			name: "Walworking Technologies Limited",
 			url: baseUrl,
 			logo: `${baseUrl}/assets/images/logo/logo-w.png`,
-			telephone: "+234-810-698-1539",
+			telephone: contactPhoneMain,
 			address: {
 				"@type": "PostalAddress",
-				streetAddress:
-					"15 Custom Street, Alakuko, Lagos/Abeokuta Expressway",
+				streetAddress: companyAddress,
 				addressLocality: "Lagos State",
 				addressCountry: "Nigeria",
 			},

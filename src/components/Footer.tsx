@@ -68,25 +68,26 @@ const Footer: React.FC = () => {
 							and property with professional expertise and
 							cutting-edge technology.
 						</p>
+						
 						<div className="flex space-x-4">
 							{[
 								{
-									href: "https://facebook.com/walworkingtech",
+									href: "https://www.facebook.com/walworkingtechnologiesltd?mibextid=ZbWKwL",
 									Icon: Facebook,
 									label: "Facebook",
 								},
 								{
-									href: "https://twitter.com/walworkingtech",
+									href: "https://x.com/WalWorkingTech?t=pL42Nf6cl_suKhIE3ygypQ&s=09",
 									Icon: Twitter,
 									label: "Twitter",
 								},
 								{
-									href: "https://linkedin.com/company/walworkingtech",
+									href: "https://www.linkedin.com/company/wal-working-technologies-ltd",
 									Icon: Linkedin,
 									label: "LinkedIn",
 								},
 								{
-									href: "https://instagram.com/walworkingtech",
+									href: "https://www.instagram.com/wal_working_technologies_ltd",
 									Icon: Instagram,
 									label: "Instagram",
 								},
@@ -96,6 +97,7 @@ const Footer: React.FC = () => {
 									href={href}
 									className="text-secondary-400 hover:text-white transition-colors"
 									aria-label={`Follow us on ${label}`}
+									target="blank"
 								>
 									<Icon className="w-5 h-5 sm:w-6 sm:h-6" />
 								</a>
