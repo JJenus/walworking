@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import { Send, CheckCircle, AlertCircle } from "lucide-react";
+import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { contactGmail } from "../util/contact";
 
 const ContactForm: React.FC = () => {
-	const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+	const [submitStatus, setSubmitStatus] = useState<
+		"idle" | "loading" | "success" | "error"
+	>("idle");
 
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+		setSubmitStatus("loading");
 
 		const form = e.currentTarget;
 		const formData = new FormData(form);
@@ -80,8 +83,21 @@ const ContactForm: React.FC = () => {
 
 				<textarea name="Message" rows={5} placeholder="Your Message *" required className="w-full border border-gray-300 rounded-lg px-4 py-3"></textarea>
 
-				<button type="submit" className="w-full py-4 px-6 rounded-lg font-medium text-lg flex items-center justify-center bg-primary-600 hover:bg-primary-700 text-white transition-all duration-300">
-					Send Message <Send className="w-5 h-5 ml-2" />
+				<button
+					type="submit"
+					className="w-full py-4 px-6 rounded-lg font-medium text-lg flex items-center justify-center bg-primary-600 hover:bg-primary-700 text-white transition-all duration-300 disabled:bg-primary-400 disabled:cursor-not-allowed"
+					disabled={submitStatus === "loading"}
+				>
+					{submitStatus === "loading" ? (
+						<>
+							<Loader2 className="w-5 h-5 mr-2 animate-spin" />
+							<span>Submitting...</span>
+						</>
+					) : (
+						<>
+							Send Message <Send className="w-5 h-5 ml-2" />
+						</>
+					)}
 				</button>
 			</form>
 		</div>

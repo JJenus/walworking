@@ -1,15 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import {
 	MapPin,
 	Phone,
 	Mail,
 	Clock,
-	Send,
-	CheckCircle,
-	AlertCircle,
-	User,
-	Building,
-	MessageSquare,
 } from "lucide-react";
 import SEO from "../components/SEO";
 import fighterImg from "../assets/image/team/back-view-firefighters-trying-put-out-wildfire.jpg";
@@ -22,34 +16,7 @@ import {
 } from "../util/contact";
 import ContactForm from "../components/ContactForm";
 
-
-interface ContactForm {
-	firstName: string;
-	lastName: string;
-	email: string;
-	phone: string;
-	company: string;
-	service: string;
-	message: string;
-}
-
 const Contact: React.FC = () => {
-	const [formData, setFormData] = useState<ContactForm>({
-		firstName: "",
-		lastName: "",
-		email: "",
-		phone: "",
-		company: "",
-		service: "",
-		message: "",
-	});
-
-	const [isSubmitting, setIsSubmitting] = useState(false);
-	const [submitStatus, setSubmitStatus] = useState<
-		"idle" | "success" | "error"
-	>("idle");
-	const [errors, setErrors] = useState<Partial<ContactForm>>({});
-
 	const observerRef = useRef<IntersectionObserver>();
 
 	useEffect(() => {
@@ -109,74 +76,6 @@ const Contact: React.FC = () => {
 				geoRadius: "1000000",
 			},
 		},
-	};
-
-	const validateForm = (): boolean => {
-		const newErrors: Partial<ContactForm> = {};
-
-		if (!formData.firstName.trim())
-			newErrors.firstName = "First name is required";
-		if (!formData.lastName.trim())
-			newErrors.lastName = "Last name is required";
-		if (!formData.email.trim()) {
-			newErrors.email = "Email is required";
-		} else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-			newErrors.email = "Please enter a valid email address";
-		}
-		if (!formData.phone.trim())
-			newErrors.phone = "Phone number is required";
-		if (!formData.service.trim())
-			newErrors.service = "Please select a service";
-		if (!formData.message.trim()) newErrors.message = "Message is required";
-
-		setErrors(newErrors);
-		return Object.keys(newErrors).length === 0;
-	};
-
-	const handleInputChange = (
-		e: React.ChangeEvent<
-			HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-		>
-	) => {
-		const { name, value } = e.target;
-		setFormData((prev) => ({ ...prev, [name]: value }));
-
-		// Clear error for this field
-		if (errors[name as keyof ContactForm]) {
-			setErrors((prev) => ({ ...prev, [name]: undefined }));
-		}
-	};
-
-	const handleSubmit = async (e: React.FormEvent) => {
-		e.preventDefault();
-
-		if (!validateForm()) return;
-
-		setIsSubmitting(true);
-		setSubmitStatus("idle");
-
-		try {
-			// Simulate API call
-			await new Promise((resolve) => setTimeout(resolve, 2000));
-
-			// In a real application, you would send the form data to your backend
-			console.log("Form submitted:", formData);
-
-			setSubmitStatus("success");
-			setFormData({
-				firstName: "",
-				lastName: "",
-				email: "",
-				phone: "",
-				company: "",
-				service: "",
-				message: "",
-			});
-		} catch (error) {
-			setSubmitStatus("error");
-		} finally {
-			setIsSubmitting(false);
-		}
 	};
 
 	return (
