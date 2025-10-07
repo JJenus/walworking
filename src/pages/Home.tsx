@@ -16,6 +16,7 @@ import {
   Wrench,
   GraduationCap
 } from 'lucide-react';
+import SEO from '../components/SEO';
 import fighterImg from "../assets/image/team/back-view-firefighters-trying-put-out-wildfire.jpg"
 
 const Home: React.FC = () => {
@@ -55,8 +56,38 @@ const Home: React.FC = () => {
     return () => observerRef.current?.disconnect();
   }, []);
 
+  const pageTitle = "Walworking Technologies | Fire Safety, Services & Consulting in Nigeria";
+  const pageDescription = "Your trusted partner for comprehensive fire safety services, solutions, and consulting in Nigeria. We protect lives and property with professional expertise and cutting-edge technology. Get a free consultation today.";
+  const canonicalUrl = import.meta.env.VITE_BASE_URL;
+  const ogImageUrl = `${import.meta.env.VITE_BASE_URL}${fighterImg}`;
+
+  const schemaMarkup = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Walworking Technologies',
+    url: canonicalUrl,
+    logo: `${import.meta.env.VITE_BASE_URL}/assets/images/logo/logo.png`,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: import.meta.env.VITE_CONTACT_PHONE_MAIN,
+      contactType: 'customer service',
+      areaServed: 'NG',
+      availableLanguage: 'en'
+    },
+    description: pageDescription,
+  };
+
   return (
     <div className="overflow-x-hidden">
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        canonicalUrl={canonicalUrl}
+        ogImage={ogImageUrl}
+        ogType="website"
+        twitterCard="summary_large_image"
+        schemaMarkup={schemaMarkup}
+      />
       {/* Hero Section with Parallax */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
