@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
 	MapPin,
@@ -10,17 +10,49 @@ import {
 	Linkedin,
 	Instagram,
 	ArrowRight,
+	CheckCircle,
+	AlertCircle,
+	Loader2,
 } from "lucide-react";
 import Logo from "./Logo";
 import {
 	companyAddress,
 	contactEmailInfo,
+	contactGmail,
 	contactPhoneMain,
 	contactPhoneSecondary,
 } from "../util/contact";
 
 const Footer: React.FC = () => {
 	const currentYear = new Date().getFullYear();
+	const [submitStatus, setSubmitStatus] = useState<
+		"idle" | "loading" | "success" | "error"
+	>("idle");
+
+	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		setSubmitStatus("loading");
+
+		const form = e.currentTarget;
+		const formData = new FormData(form);
+
+		fetch(`https://formsubmit.co/${contactGmail}`, {
+			method: "POST",
+			body: formData,
+			headers: {
+				Accept: "application/json",
+			},
+		})
+			.then((res) => {
+				if (res.ok) {
+					setSubmitStatus("success");
+					form.reset();
+				} else {
+					setSubmitStatus("error");
+				}
+			})
+			.catch(() => setSubmitStatus("error"));
+	};
 
 	return (
 		<footer className="bg-gray-900 text-white">
@@ -35,8 +67,27 @@ const Footer: React.FC = () => {
 							Get the latest fire safety tips, industry updates,
 							and exclusive offers delivered to your inbox.
 						</p>
-						<form className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+						{submitStatus === "success" && (
+							<div className="bg-green-100 border border-green-300 rounded-lg p-3 mb-4 flex items-center justify-center max-w-md mx-auto">
+								<CheckCircle className="w-5 h-5 text-green-700 mr-2" />
+								<p className="text-green-800 text-sm font-medium">Subscribed successfully! Thank you.</p>
+							</div>
+						)}
+						{submitStatus === "error" && (
+							<div className="bg-red-100 border border-red-300 rounded-lg p-3 mb-4 flex items-center justify-center max-w-md mx-auto">
+								<AlertCircle className="w-5 h-5 text-red-700 mr-2" />
+								<p className="text-red-800 text-sm font-medium">Failed to subscribe. Please try again.</p>
+							</div>
+						)}
+						<form onSubmit={handleSubmit} className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+							{/* Hidden FormSubmit Config */}
+							<input type="hidden" name="_captcha" value="false" />
+							<input type="hidden" name="_template" value="table" />
+							<input type="hidden" name="_subject" value="New Newsletter Subscription from Walworking Website" />
+							<input type="hidden" name="_next" value={window.location.href} />
+
 							<input
+								name="Email"
 								type="email"
 								placeholder="Enter your email address"
 								className="flex-1 px-4 py-3 rounded-lg text-secondary-900 focus:outline-none focus:ring-2 focus:ring-white text-sm sm:text-base"
@@ -44,10 +95,20 @@ const Footer: React.FC = () => {
 							/>
 							<button
 								type="submit"
-								className="bg-white text-primary-600 px-6 py-3 rounded-lg hover:bg-secondary-100 transition-colors font-medium flex items-center justify-center"
+								className="bg-white text-primary-600 px-6 py-3 rounded-lg hover:bg-secondary-100 transition-colors font-medium flex items-center justify-center disabled:bg-gray-200 disabled:cursor-not-allowed"
+								disabled={submitStatus === "loading"}
 							>
-								Subscribe
-								<ArrowRight className="w-4 h-4 ml-2" />
+								{submitStatus === "loading" ? (
+									<>
+										<Loader2 className="w-4 h-4 mr-2 animate-spin" />
+										<span>Subscribing...</span>
+									</>
+								) : (
+									<>
+										Subscribe
+										<ArrowRight className="w-4 h-4 ml-2" />
+									</>
+								)}
 							</button>
 						</form>
 					</div>
