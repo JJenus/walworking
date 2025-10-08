@@ -107,8 +107,8 @@ const Home: React.FC = () => {
 				/>
 
 				{/* Hero Content */}
-				<div className="relative mt-8 lg:pt-10 z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-					<div className="mb-8 animate-fadeInUp">
+				<div className="relative mt-8  z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+					<div className="mb-8 lg:mt-20 animate-fadeInUp">
 						<div className="inline-flex items-center bg-primary-600 px-4 py-2 rounded-full mb-6">
 							<Shield className="w-5 h-5 mr-2" />
 							<span className="text-sm font-medium">
